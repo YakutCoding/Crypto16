@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 969f25d5633c6124b9abf33614b07c06
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107079
+  packageName: Auto Exposure Mobile Color Grading
+  packageVersion: 1.2
+  assetPath: Assets/AutoMobileColorGrading/Shaders/AutoMobileColorGrading.shader
+  uploadId: 614187

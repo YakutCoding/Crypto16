@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 8a0fe1bbcd5853744ae1d095e6712e68
+timeCreated: 1514367417
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107079
+  packageName: Auto Exposure Mobile Color Grading
+  packageVersion: 1.2
+  assetPath: Assets/AutoMobileColorGrading/Sample/Trigger.mat
+  uploadId: 614187

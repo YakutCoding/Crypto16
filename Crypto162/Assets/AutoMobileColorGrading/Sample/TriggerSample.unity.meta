@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 89451788c3e86a74887c0ee0c2477db3
+timeCreated: 1514367403
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107079
+  packageName: Auto Exposure Mobile Color Grading
+  packageVersion: 1.2
+  assetPath: Assets/AutoMobileColorGrading/Sample/TriggerSample.unity
+  uploadId: 614187

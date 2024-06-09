@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 52098aaa27cb3634aba082fcf2f48a41
+timeCreated: 1514367463
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107079
+  packageName: Auto Exposure Mobile Color Grading
+  packageVersion: 1.2
+  assetPath: Assets/AutoMobileColorGrading/Sample/CameraAnimTest.anim
+  uploadId: 614187

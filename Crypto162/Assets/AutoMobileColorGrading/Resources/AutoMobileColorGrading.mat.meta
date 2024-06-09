@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3e70001df5bfa1a409ada516c92a5787
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107079
+  packageName: Auto Exposure Mobile Color Grading
+  packageVersion: 1.2
+  assetPath: Assets/AutoMobileColorGrading/Resources/AutoMobileColorGrading.mat
+  uploadId: 614187

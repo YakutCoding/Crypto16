@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c0cb8753d51ccfe47b3b8b293ff5bdb4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107079
+  packageName: Auto Exposure Mobile Color Grading
+  packageVersion: 1.2
+  assetPath: Assets/AutoMobileColorGrading/Scripts/AutoMobileColorGrading.cs
+  uploadId: 614187
