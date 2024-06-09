@@ -9,7 +9,7 @@ public class PlayerCount : MonoBehaviour
     public TextMeshProUGUI dpn,aseli,bl,rd,bld,rdd,pl;
     public cakv[] b,r;
     public int Asdf{get=>asdf;set=>asdf=value;}
-    public GameObject pentil,rb,bb,misi,uicount;
+    public GameObject pentil,rb,bb,misi,uicount,COLSAIDJSAI;
     public ParticleSystem bbb,rrr;
     // Start is called before the first frame update
     void Start()
@@ -93,6 +93,7 @@ public class PlayerCount : MonoBehaviour
     uicount.SetActive(false);
     bbb.loop=false;
     rrr.loop=false;
+    COLSAIDJSAI.SetActive(false);
     bbb.name="Sensitivity Changed";
     rrr.name="Sensitivity Changed";
         }
