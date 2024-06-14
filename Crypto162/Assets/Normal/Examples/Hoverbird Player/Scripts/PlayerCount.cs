@@ -9,7 +9,7 @@ public class PlayerCount : MonoBehaviour
     public TextMeshProUGUI dpn,aseli,bl,rd,bld,rdd,pl;
     public cakv[] b,r;
     public int Asdf{get=>asdf;set=>asdf=value;}
-    public GameObject pentil,rb,bb,misi,uicount,COLSAIDJSAI;
+    public GameObject pentil,rb,bb,misi,uicount,COLSAIDJSAI,camo,coma,cami;
     public ParticleSystem bbb,rrr;
     // Start is called before the first frame update
     void Start()
@@ -86,15 +86,18 @@ public class PlayerCount : MonoBehaviour
         if(SimpleInput.GetButtonDown("Red")||SimpleInput.GetButtonDown("Blue"))
         {
             pentil.SetActive(true);
+            Destroy(camo,1.5f);
         }
         if(Asdf<0)
-        {
+        {cami.SetActive(true);
+        coma.SetActive(true);
             misi.SetActive(true);
     uicount.SetActive(false);
     bbb.loop=false;
     rrr.loop=false;
     COLSAIDJSAI.SetActive(false);
-    bbb.name="Sensitivity Changed";
+    bbb.name="Sensitivity Changed";Destroy(cami,5f);
+    Destroy(coma,5f);
     rrr.name="Sensitivity Changed";
         }
         if(Asdf<40)
@@ -109,6 +112,7 @@ public class PlayerCount : MonoBehaviour
         rd.text = ""+r.Length+"/3";
         bld.text = ""+b.Length+"/3 Players";
         rdd.text = ""+r.Length+"/3 Players";
+        
     }
     void pler()
     {

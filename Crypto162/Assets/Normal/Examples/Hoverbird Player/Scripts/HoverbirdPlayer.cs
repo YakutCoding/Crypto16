@@ -24,8 +24,26 @@ namespace Normal.Realtime.Examples {
 
         // Multiplayer
         private RealtimeView _realtimeView;
+        public float sl;
         public AnimSync a;
+    public Animator bapak;
+        void OnTriggerEnter(Collider other)
+        {
+            if(!other.GetComponent<RealtimeView>().isOwnedLocallyInHierarchy)
+            {
+            if(other. GetComponent<NewBehaviourScript>()!=null)
+            {
+                sl=0;
+                Invoke("pntil",other.GetComponent<NewBehaviourScript>().GameTime);
+            }
+            bapak.Play("stun");
+            }
 
+        }
+        void pntil()
+        {
+            sl=1;
+        }
         private void Awake() {
             // Set physics timestep to 60hz
             Time.fixedDeltaTime = 1.0f/60.0f;
@@ -77,10 +95,10 @@ namespace Normal.Realtime.Examples {
             CheckForJump();
             if(SimpleInput.GetButtonDown("Blue"))
             {
-gameObject.transform.position = new Vector3(Random.Range(-90,90),3,Random.Range(30,86));
+gameObject.transform.position = new Vector3(Random.Range(-90,90),9,Random.Range(30,86));
             }else if(SimpleInput.GetButtonDown("Red"))
             {
-                gameObject.transform.position = new Vector3(Random.Range(-90,90),3,Random.Range(-86,-30));
+                gameObject.transform.position = new Vector3(Random.Range(-90,90),9,Random.Range(-86,-30));
             }
         }
 
@@ -117,12 +135,12 @@ gameObject.transform.position = new Vector3(Random.Range(-90,90),3,Random.Range(
             Quaternion cameraLookForward       = Quaternion.LookRotation(cameraLookForwardVector);
 
             // Use the camera look direction to convert the input movement from camera space to world space
-            _targetMovement = cameraLookForward * inputMovement;
+            _targetMovement = cameraLookForward * inputMovement* sl;
         }
 
         private void CheckForJump() {
             // Jump if the space bar was pressed this frame and we're not already jumping, trigger the jump
-            if(isGrounded)
+            if(isGrounded&& sl>0)
             {
             if (Input.GetKeyDown(KeyCode.Space) && !_jumping)
                 _jumpThisFrame = true;

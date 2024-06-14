@@ -7,6 +7,7 @@ public class cakv : MonoBehaviour
     public string Cakvs {get=>cakvs;set=>cakvs=value;}
     public Outline[] pentilbabi;
     public TextMeshProUGUI t;
+    public GameObject[] puentol;
    
     void OnTriggerEnter(Collider other)
     {
@@ -23,6 +24,10 @@ public class cakv : MonoBehaviour
             {
             ps.OutlineColor = Color.cyan;
             t.color=Color.cyan;
+            foreach(GameObject puentols in puentol)
+            {
+            puentols.tag = "Finish";
+            }
             }
         }
         else{
@@ -30,6 +35,9 @@ public class cakv : MonoBehaviour
             {
             ps.OutlineColor = Color.red;
               t.color=Color.red;
+                   foreach(GameObject puentols in puentol)
+            {
+               puentols.tag = "GameController";}
             }
         }
         }

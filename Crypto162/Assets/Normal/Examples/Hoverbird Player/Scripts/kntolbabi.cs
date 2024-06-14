@@ -9,7 +9,7 @@ public class kntolbabi : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //WKWKWKKWW CHEATER TOL0L, MAU NGEDUMP KAH? MAKAN INI SCRIPT ANEH ANEH...
     }
 
     // Update is called once per frame
