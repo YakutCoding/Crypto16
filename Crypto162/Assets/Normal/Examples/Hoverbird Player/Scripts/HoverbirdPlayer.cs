@@ -1,8 +1,7 @@
 ﻿#if NORMCORE
 
 using UnityEngine;
-
-namespace Normal.Realtime.Examples {
+using Normal.Realtime;
     public class HoverbirdPlayer : MonoBehaviour {
         // Camera
         public  Transform  cameraTarget;
@@ -29,21 +28,10 @@ namespace Normal.Realtime.Examples {
     public Animator bapak;
         void OnTriggerEnter(Collider other)
         {
-            if(!other.GetComponent<RealtimeView>().isOwnedLocallyInHierarchy)
-            {
-            if(other. GetComponent<NewBehaviourScript>()!=null)
-            {
-                sl=0;
-                Invoke("pntil",other.GetComponent<NewBehaviourScript>().GameTime);
-            }
-            bapak.Play("stun");
-            }
+           
 
         }
-        void pntil()
-        {
-            sl=1;
-        }
+    
         private void Awake() {
             // Set physics timestep to 60hz
             Time.fixedDeltaTime = 1.0f/60.0f;
@@ -232,6 +220,6 @@ gameObject.transform.position = new Vector3(Random.Range(-90,90),9,Random.Range(
             return angle;
         }
     }
-}
+
 
 #endif

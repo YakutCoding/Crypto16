@@ -6944,6 +6944,11 @@ MonoBehaviour:
   puky: {fileID: 6904976350798567732}
   sasds: {fileID: 3581880347643118772}
   GameUtility: {fileID: 6561380037737020503}
+  bapak: {fileID: 5849916817303649980}
+  p: {fileID: 1965851619680292246}
+  coin: {fileID: 1011198945944610506, guid: cdfb4d7ede6c71048abb41634b6bf26d, type: 3}
+  plerados: 640000009600000032000000
+  asd: {fileID: 8048412637054616227}
 --- !u!114 &-6626233810026886563
 MonoBehaviour:
   m_ObjectHideFlags: 0
