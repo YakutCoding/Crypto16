@@ -73,7 +73,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _BumpScale: 1
-    - _Contrast: 1
+    - _Contrast: 1.392
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
@@ -91,7 +91,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _VignetteIntensity: 0.116
+    - _VignetteIntensity: 0.204
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.008, g: -0.027, b: -0.032, a: 1}

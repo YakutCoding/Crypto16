@@ -13,7 +13,7 @@ public class takpct : MonoBehaviour
     public Animator GameUtility,bapak;
     GameObject usi;
     public HoverbirdPlayer p;
-    public GameObject coin;
+    public GameObject coin,coinr;
     public int[] plerados;
     public KrkTerCuk asd;
     
@@ -58,14 +58,27 @@ if(usi.tag == "Finish")
         puky.text = ""+Takpcts;
         if(Takpcts<1)
         {Invoke("Hey",6);
+         if(a.Cakvs.Contains("xkdrk"))
+        {
+            if(a.Cakvs.Contains("b"))
+            {
+            
+                 Realtime.Instantiate(coinr.name,gameObject.transform.position,gameObject.transform.rotation);
+                
+            }else{
+
+                Realtime.Instantiate(coin.name,gameObject.transform.position,gameObject.transform.rotation);
+                
+            }}
             if(GetComponent<RealtimeView>().isOwnedLocallyInHierarchy)
             {
-                Realtime.Instantiate(coin.name,gameObject.transform.position,gameObject.transform.rotation);
-                gameObject.transform.position = new Vector3(gameObject.transform.position.x,-40,gameObject.transform.position.z);
+                
+                gameObject.transform.position = new Vector3(gameObject.transform.position.x,-900,gameObject.transform.position.z);
                 Takpcts=mxtk;
               
             GameObject s = GameObject.Find("GameController");
             s.GetComponent<GameManager>().skibidisigma.SetActive(true);
+               
             
             
         }
@@ -106,7 +119,10 @@ Debug.Log("asd");
         }
         if(GetComponent<RealtimeView>().isOwnedLocallyInHierarchy)
         {
-            Invoke("setSensitivity",0.5f);
+            Invoke("setSensitivity",0.4f);if(other.GetComponent<zkvkwa>()!=null)
+            {
+                GameUtility.Play("GameUtility");
+            }
                     usi = other.gameObject;
       
         }

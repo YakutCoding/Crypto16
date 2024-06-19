@@ -1,4 +1,4 @@
-﻿#if NORMCORE
+﻿
 
 using UnityEngine;
 using Normal.Realtime;
@@ -26,6 +26,7 @@ using Normal.Realtime;
         public float sl;
         public AnimSync a;
     public Animator bapak;
+    public float LagMultiplier;
         void OnTriggerEnter(Collider other)
         {
            
@@ -100,8 +101,8 @@ gameObject.transform.position = new Vector3(Random.Range(-90,90),9,Random.Range(
 
         private void RotateCamera() {
             // Get the latest mouse movement. Multiple by 4.0 to increase sensitivity.
-            _mouseLookX += Input.GetAxis("Mouse X") * 4.0f;
-            _mouseLookY += Input.GetAxis("Mouse Y") * 4.0f;
+            _mouseLookX += SimpleInput.GetAxis("MouseX") * 4.0f;
+            _mouseLookY += SimpleInput.GetAxis("MouseY") * 4.0f;
 
             // Clamp how far you can look up + down
             while (_mouseLookY < -180.0f) _mouseLookY += 360.0f;
@@ -115,8 +116,8 @@ gameObject.transform.position = new Vector3(Random.Range(-90,90),9,Random.Range(
         private void CalculateTargetMovement() {
             // Get input movement. Multiple by 6.0 to increase speed.
             Vector3 inputMovement = new Vector3();
-            inputMovement.x = SimpleInput.GetAxisRaw("Horizontal") * 55.0f;
-            inputMovement.z = SimpleInput.GetAxisRaw("Vertical")   * 55f;
+            inputMovement.x = SimpleInput.GetAxisRaw("Horizontal") * 55.0f*LagMultiplier;
+            inputMovement.z = SimpleInput.GetAxisRaw("Vertical")   * 55f* LagMultiplier;
 
             // Get the direction the camera is looking parallel to the ground plane.
             Vector3    cameraLookForwardVector = ProjectVectorOntoGroundPlane(cameraTarget.forward);
@@ -130,7 +131,7 @@ gameObject.transform.position = new Vector3(Random.Range(-90,90),9,Random.Range(
             // Jump if the space bar was pressed this frame and we're not already jumping, trigger the jump
             if(isGrounded&& sl>0)
             {
-            if (Input.GetKeyDown(KeyCode.Space) && !_jumping)
+            if (SimpleInput.GetButtonDown("Jump") && !_jumping)
                 _jumpThisFrame = true;
                 }
         }
@@ -221,5 +222,3 @@ gameObject.transform.position = new Vector3(Random.Range(-90,90),9,Random.Range(
         }
     }
 
-
-#endif

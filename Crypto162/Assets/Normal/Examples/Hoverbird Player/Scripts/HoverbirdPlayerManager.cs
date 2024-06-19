@@ -2,15 +2,17 @@
 
 using UnityEngine;
 using UnityEngine.Animations;
-
+using TMPro;using UnityEngine.SceneManagement;
 namespace Normal.Realtime.Examples {
     public class HoverbirdPlayerManager : MonoBehaviour {
         [SerializeField] private GameObject _camera = default;
          [SerializeField] private GameObject _prefab;
           public NormcoreAppSettings[] Server;
         private NormcoreAppSettings[][] groupAppSettings;
-        private Realtime _realtime;
-        public GameObject playercount,uicount;
+        private Realtime _realtime;bool disc;
+        public Animator pingk;
+        public GameObject playercount,uicount;HoverbirdPlayer plat;
+        public TextMeshProUGUI pingText;
         
         private void Awake() {
             // Get the Realtime component on this game object
@@ -64,6 +66,7 @@ uicount.SetActive(true);
 
             // Get the constraint used to position the camera behind the player
             ParentConstraint cameraConstraint = _camera.GetComponent<ParentConstraint>();
+            plat = player;
 
             // Add the camera target so the camera follows it
             ConstraintSource constraintSource = new ConstraintSource { sourceTransform = player.cameraTarget, weight = 1.0f };
@@ -72,6 +75,42 @@ uicount.SetActive(true);
             // Set the camera offset so it acts like a third-person camera.
             cameraConstraint.SetTranslationOffset(constraintIndex, new Vector3( 0.0f,  5.2f, -34.9f));
             cameraConstraint.SetRotationOffset   (constraintIndex, new Vector3(15.0f,  0.0f,  0.0f));
+        }
+        void Update()
+        {
+            float Ping = _realtime.ping;
+            bool StatusRoom = _realtime.disconnected;
+            pingText.text = ((int)(Ping/4)).ToString() + " ms";
+            if(Ping/4 > 110)
+            {
+                print("Lag bgt co");
+            }
+            if(Ping/4>70 && Ping/4< 101)
+            {
+                plat.LagMultiplier = 40/(Ping/4);
+                pingk.Play("YellowPing");
+            }else if(Ping/4<81){
+                plat.LagMultiplier = 1f;
+            }
+            if(Ping/4> 100)
+            {plat.LagMultiplier = 30/(Ping/4);
+            if(!disc)
+            {
+            Invoke("Disconnectd",8);
+            disc=true;
+            }
+                pingk.Play("RedPing");
+            }else if(Ping/4 < 71)
+            {
+                pingk.Play("GreenPink");
+                disc=false;
+                CancelInvoke("Disconnectd");
+            }
+            if(StatusRoom)
+            {
+                print("Disconnectjir");
+                SceneManager.LoadScene("Lag");
+            }
         }
     }
 }

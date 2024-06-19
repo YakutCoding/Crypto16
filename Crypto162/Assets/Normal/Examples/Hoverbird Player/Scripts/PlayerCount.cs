@@ -9,7 +9,7 @@ public class PlayerCount : MonoBehaviour
     public TextMeshProUGUI dpn,aseli,bl,rd,bld,rdd,pl;
     public cakv[] b,r;
     public int Asdf{get=>asdf;set=>asdf=value;}
-    public GameObject pentil,rb,bb,misi,uicount,COLSAIDJSAI,camo,coma,cami;
+    public GameObject pentil,rb,bb,misi,uicount,COLSAIDJSAI,camo,coma,cami,at,ut,pentol;
     public ParticleSystem bbb,rrr;
     // Start is called before the first frame update
     void Start()
@@ -24,10 +24,18 @@ public class PlayerCount : MonoBehaviour
             SceneManager.LoadScene("Full");
         }
     }
-
+void susu()
+{
+    pentol.SetActive(true);
+}
     // Update is called once per frame
     void Update()
     {
+        if(Asdf<1)
+        {
+            Asdf=-1; 
+        }
+      
         // Mencari semua game object dengan script Cakv
         GameObject[] allCakvs = GameObject.FindGameObjectsWithTag("Player");
 
@@ -92,11 +100,12 @@ public class PlayerCount : MonoBehaviour
         {cami.SetActive(true);
         coma.SetActive(true);
             misi.SetActive(true);
+            Invoke("susu",5f);
     uicount.SetActive(false);
     bbb.loop=false;
     rrr.loop=false;
     COLSAIDJSAI.SetActive(false);
-    bbb.name="Sensitivity Changed";Destroy(cami,5f);
+    bbb.name="Sensitivity Changed";Destroy(cami,5f);at.SetActive(true); ut.SetActive(true);
     Destroy(coma,5f);
     rrr.name="Sensitivity Changed";
         }
