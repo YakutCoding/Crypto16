@@ -112,6 +112,11 @@ uicount.SetActive(true);
                 SceneManager.LoadScene("Lag");
             }
         }
+             void Disconnectd()
+        {
+            SceneManager.LoadScene("Lag");
+           
+        }
     }
 }
 

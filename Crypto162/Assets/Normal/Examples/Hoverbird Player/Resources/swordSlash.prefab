@@ -654,7 +654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62193d4d5436dd4b9b5d391293f6e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Zkvkwa: 40
+  Zkvkwa: 30
   GameTimer: 0
   CoinCryptoCurrency: 0
 --- !u!82 &-3250111016956741087
