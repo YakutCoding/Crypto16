@@ -11,6 +11,7 @@ public class PlayerCount : MonoBehaviour
     public int Asdf{get=>asdf;set=>asdf=value;}
     public GameObject pentil,rb,bb,misi,uicount,COLSAIDJSAI,camo,coma,cami,at,ut,pentol;
     public ParticleSystem bbb,rrr;
+    public pentilebabi tetaelek;
     // Start is called before the first frame update
     void Start()
     {
@@ -108,6 +109,7 @@ void susu()
     bbb.name="Sensitivity Changed";Destroy(cami,5f);at.SetActive(true); ut.SetActive(true);
     Destroy(coma,5f);
     rrr.name="Sensitivity Changed";
+    tetaelek.peler = false;
         }
         if(Asdf<40)
         {

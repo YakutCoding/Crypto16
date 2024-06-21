@@ -9420,6 +9420,7 @@ GameObject:
   - component: {fileID: -89153590960527260}
   - component: {fileID: -5058471773146217625}
   - component: {fileID: -2456748701083263756}
+  - component: {fileID: 7644032588031963023}
   m_Layer: 0
   m_Name: tankSmash
   m_TagString: Untagged
@@ -14099,6 +14100,8 @@ MonoBehaviour:
     component: {fileID: -7774400180574633461}
   - componentID: 2
     component: {fileID: 505027785583057633}
+  - componentID: 3
+    component: {fileID: 7644032588031963023}
   _childViews: []
 --- !u!114 &505027785583057633
 MonoBehaviour:
@@ -14131,6 +14134,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ote: 
+  a: {fileID: -89153590960527260}
+  pusis: 0
 --- !u!114 &-7774400180574633461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14316,3 +14321,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7644032588031963023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4332751183353045791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64d87425672da4b10b5e976ca61c3cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _intPropertyBinders:
+  - rid: 6809656425809444911
+  localIntValue: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 6809656425809444911
+      type: {class: IntValuePropertyBinder, ns: chetu3319.ParameterBinder, asm: Assembly-CSharp}
+      data:
+        Enabled: 1
+        Target: {fileID: 8792125308493882869}
+        PropertyName: pusi
+        _propertyType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089

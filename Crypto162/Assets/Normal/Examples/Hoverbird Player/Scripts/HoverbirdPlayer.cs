@@ -17,6 +17,7 @@ using Normal.Realtime;
 
         private Rigidbody _rigidbody;
         bool isGrounded=true;
+        public float GameControlInput;
 
         // Character
         [SerializeField] private Transform _character = default;
@@ -116,8 +117,8 @@ gameObject.transform.position = new Vector3(Random.Range(-90,90),9,Random.Range(
         private void CalculateTargetMovement() {
             // Get input movement. Multiple by 6.0 to increase speed.
             Vector3 inputMovement = new Vector3();
-            inputMovement.x = SimpleInput.GetAxisRaw("Horizontal") * 55.0f*LagMultiplier;
-            inputMovement.z = SimpleInput.GetAxisRaw("Vertical")   * 55f* LagMultiplier;
+            inputMovement.x = (SimpleInput.GetAxisRaw("Horizontal") * (55.0f+(float)GameControlInput))*LagMultiplier;
+            inputMovement.z = (SimpleInput.GetAxisRaw("Vertical")   * (55f+(float)GameControlInput))* LagMultiplier;
 
             // Get the direction the camera is looking parallel to the ground plane.
             Vector3    cameraLookForwardVector = ProjectVectorOntoGroundPlane(cameraTarget.forward);
