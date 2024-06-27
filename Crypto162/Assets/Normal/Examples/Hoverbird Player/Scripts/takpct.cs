@@ -16,10 +16,25 @@ public class takpct : MonoBehaviour
     public GameObject coin,coinr;
     public int[] plerados;
     public KrkTerCuk asd;
+    bool coinGet;
     
     /* Wkkwkwkwk hack terus bang, nanti dibanned nangis.. kita bisa dapetin ip lu dengan ez, jadinya lu gabisa kerjain airdrop lagi walau bikin akun baru.*/
-    void Start()
+    void GetCoin()
     {
+        if(GetComponent<RealtimeView>().isOwnedLocallyInHierarchy)
+        {
+        if(coinGet)
+        {
+            Takpcts-=10;
+            GameObject GameCoin = Realtime.Instantiate("GameCoins",gameObject.transform.position,gameObject.transform.rotation);
+            GameCoin.GetComponent<cqczvl>().kntl = ""+10;
+             GameCoin.GetComponent<cqczvl>().kolor=gameObject;
+             coinGet=false;GameUtility.Play("GameUtility");
+        }}
+        Invoke("GetCoin",0.5f);
+    }
+    void Start()
+    {Invoke("GetCoin",0.5f);
         Invoke("CoinDrop",1);
     }
     void CoinDrop()
@@ -56,6 +71,8 @@ if(usi.tag == "Finish")
     {
         sasds.fillAmount = ((float)Takpcts/(float)mxtk);
         puky.text = ""+Takpcts;
+        if(GetComponent<RealtimeView>().isOwnedLocallyInHierarchy)
+        {
         if(Takpcts<1)
         {Invoke("Hey",6);
          if(a.Cakvs.Contains("xkdrk"))
@@ -82,24 +99,34 @@ if(usi.tag == "Finish")
             
             
         }
-    }
+    }}
    
-    } void Hey()
+    } 
+    
+    void OnTriggerStay(Collider other)
+    {
+        if(other.tag=="GameCoin")
+        {
+            coinGet=true;
+        }
+    }
+    void Hey()
     {
             
               if(a.Cakvs.Length>0)
                 {
                        if(a.Cakvs.Contains("b"))
             {
-gameObject.transform.position = new Vector3(Random.Range(-90,90),9,Random.Range(30,86));
+gameObject.transform.position = new Vector3(Random.Range(-12,12),9,Random.Range(30,86));
 Debug.Log("asd");
             }else
             {
-                gameObject.transform.position = new Vector3(Random.Range(-90,90),9,Random.Range(-86,-30));Debug.Log("kntol");
+                gameObject.transform.position = new Vector3(Random.Range(-12,12),9,Random.Range(-86,-30));Debug.Log("kntol");
             }
-            }
+            }if(GetComponent<RealtimeView>().isOwnedLocallyInHierarchy)
+            {
             Invoke("pentoll",1);
-            Realtime.Instantiate("urip",gameObject.transform.position,gameObject.transform.rotation);
+            Realtime.Instantiate("urip",gameObject.transform.position,gameObject.transform.rotation);}
             
             }
             void pentoll()
@@ -119,7 +146,7 @@ Debug.Log("asd");
         }
         if(GetComponent<RealtimeView>().isOwnedLocallyInHierarchy)
         {
-            Invoke("setSensitivity",0.4f);if(other.GetComponent<zkvkwa>()!=null)
+            Invoke("setSensitivity",0.4f);if(other.GetComponent<zkvkwa>()!=null || other.tag=="GameCoin")
             {
                 GameUtility.Play("GameUtility");
             }

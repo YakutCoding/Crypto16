@@ -11,6 +11,7 @@ public class pentilebabi : MonoBehaviour
     public GameObject ner;
     public bool peler;
     public GameObject[] ppp,sss;
+    public GameObject lerpe,lerpes;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,7 @@ public class pentilebabi : MonoBehaviour
     {
         t.text= ""+puelor+"/100";
         if(!peler)
-        {
+        {lerpe.SetActive(true);      lerpes.SetActive(true);
         if(puelor>99)
         {
             pento.SetActive(false);
@@ -31,6 +32,9 @@ public class pentilebabi : MonoBehaviour
         }else{
             pento.SetActive(true);
         }
+        
+        }else{
+            lerpe.SetActive(false);      lerpes.SetActive(false);
         }
         if(phase==3)
         {

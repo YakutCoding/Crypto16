@@ -9,7 +9,7 @@ public class PlayerCount : MonoBehaviour
     public TextMeshProUGUI dpn,aseli,bl,rd,bld,rdd,pl;
     public cakv[] b,r;
     public int Asdf{get=>asdf;set=>asdf=value;}
-    public GameObject pentil,rb,bb,misi,uicount,COLSAIDJSAI,camo,coma,cami,at,ut,pentol;
+    public GameObject pentil,rb,bb,misi,uicount,COLSAIDJSAI,camo,coma,cami,at,ut,pentol,pentileayam,pentilesapi,peju;
     public ParticleSystem bbb,rrr;
     public pentilebabi tetaelek;
     // Start is called before the first frame update
@@ -108,7 +108,7 @@ void susu()
     COLSAIDJSAI.SetActive(false);
     bbb.name="Sensitivity Changed";Destroy(cami,5f);at.SetActive(true); ut.SetActive(true);
     Destroy(coma,5f);
-    rrr.name="Sensitivity Changed";
+    rrr.name="Sensitivity Changed";pentileayam.SetActive(true);pentilesapi.SetActive(true);peju.SetActive(true);
     tetaelek.peler = false;
         }
         if(Asdf<40)

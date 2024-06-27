@@ -60,9 +60,14 @@ using Normal.Realtime;
         }
 
         private void FixedUpdate() {
+
             // Call LocalFixedUpdate() only if this instance is owned by the local client
             if (_realtimeView.isOwnedLocallyInHierarchy)
             {
+                if(gameObject.transform.position.y>24)
+                {
+                    _rigidbody.AddForce(transform.up * -9000);
+                }
                 LocalFixedUpdate();}else{
                     Destroy(gameObject.GetComponent<HoverbirdPlayer>());
                 }

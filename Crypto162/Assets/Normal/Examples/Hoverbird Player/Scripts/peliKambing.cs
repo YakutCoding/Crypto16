@@ -14,6 +14,9 @@ public class peliKambing : MonoBehaviour
     public Color asu,asi;
     public int curentb,curentr;
     public Animator bb,rr;
+    public TextMeshProUGUI tete;
+
+    public GameObject totototo;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +27,11 @@ public class peliKambing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(zX34l<26)
+        {
+totototo.SetActive(true);
+tete.color = Color.red;
+        }
         GameObject[] pl = GameObject.FindGameObjectsWithTag("Player");
         GameObject[] a = GameObject.FindGameObjectsWithTag("Respawn"); GameObject[] b = GameObject.FindGameObjectsWithTag("EditorOnly");
         if(curentb!=b.Length)
