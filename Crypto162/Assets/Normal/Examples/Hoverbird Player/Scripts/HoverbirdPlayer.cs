@@ -28,6 +28,7 @@ using Normal.Realtime;
         public AnimSync a;
     public Animator bapak;
     public float LagMultiplier;
+    public float speedMult;
         void OnTriggerEnter(Collider other)
         {
            
@@ -64,6 +65,11 @@ using Normal.Realtime;
             // Call LocalFixedUpdate() only if this instance is owned by the local client
             if (_realtimeView.isOwnedLocallyInHierarchy)
             {
+                if(SimpleInput.GetButtonDown("UltiBot4"))
+                {
+                    speedMult=9f;
+                    Invoke("doneSprint",0.4f);
+                }
                 if(gameObject.transform.position.y>24)
                 {
                     _rigidbody.AddForce(transform.up * -9000);
@@ -71,6 +77,10 @@ using Normal.Realtime;
                 LocalFixedUpdate();}else{
                     Destroy(gameObject.GetComponent<HoverbirdPlayer>());
                 }
+        }
+        void doneSprint()
+        {
+            speedMult=1;
         }
 
         private void LocalStart() {
@@ -122,8 +132,8 @@ gameObject.transform.position = new Vector3(Random.Range(-90,90),9,Random.Range(
         private void CalculateTargetMovement() {
             // Get input movement. Multiple by 6.0 to increase speed.
             Vector3 inputMovement = new Vector3();
-            inputMovement.x = (SimpleInput.GetAxisRaw("Horizontal") * (55.0f+(float)GameControlInput))*LagMultiplier;
-            inputMovement.z = (SimpleInput.GetAxisRaw("Vertical")   * (55f+(float)GameControlInput))* LagMultiplier;
+            inputMovement.x = (SimpleInput.GetAxisRaw("Horizontal") * (55.0f+(float)GameControlInput))*LagMultiplier*speedMult;
+            inputMovement.z = (SimpleInput.GetAxisRaw("Vertical")   * (55f+(float)GameControlInput))* LagMultiplier*speedMult;
 
             // Get the direction the camera is looking parallel to the ground plane.
             Vector3    cameraLookForwardVector = ProjectVectorOntoGroundPlane(cameraTarget.forward);

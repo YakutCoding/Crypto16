@@ -42,7 +42,7 @@ public class AnimSync : MonoBehaviour
         {
         if(!ba)
         {
-            if(K.Cuk==2)
+            if(K.Cuk==2||K.Cuk==3)
             {    if(SimpleInput.GetButtonDown("Attack"))
         {ba=true;
             int r = Random.Range(0,2);
