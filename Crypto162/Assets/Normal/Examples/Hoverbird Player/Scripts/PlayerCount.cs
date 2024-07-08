@@ -12,18 +12,22 @@ public class PlayerCount : MonoBehaviour
     public GameObject pentil,rb,bb,misi,uicount,COLSAIDJSAI,camo,coma,cami,at,ut,pentol,pentileayam,pentilesapi,peju;
     public ParticleSystem bbb,rrr;
     public pentilebabi tetaelek;
+    public bool AvaibleToWithdraw=true;
+    bool Plor;
     // Start is called before the first frame update
     void Start()
     {
         Invoke("Pentil",0.3f);
-        Invoke("pler",1);
+        Invoke("pler",1f);
     }
     void Pentil()
     {
+      
         if(Asdf<0|| b.Length+r.Length>6)
         {
             SceneManager.LoadScene("Full");
         }
+        
     }
 void susu()
 {
@@ -32,7 +36,7 @@ void susu()
     // Update is called once per frame
     void Update()
     {
-        if(Asdf<1)
+        if(Plor)
         {
             Asdf=-1; 
         }
@@ -109,7 +113,10 @@ void susu()
     bbb.name="Sensitivity Changed";Destroy(cami,5f);at.SetActive(true); ut.SetActive(true);
     Destroy(coma,5f);
     rrr.name="Sensitivity Changed";pentileayam.SetActive(true);pentilesapi.SetActive(true);peju.SetActive(true);
+
+    Plor=true;
     tetaelek.peler = false;
+    AvaibleToWithdraw=false;
         }
         if(Asdf<40)
         {
@@ -126,6 +133,7 @@ void susu()
         
     }
     void pler()
+    {if(!Plor)
     {
         if(b.Length>0&&r.Length>0)
         {
@@ -134,5 +142,6 @@ void susu()
             Asdf=40;
         }
         Invoke("pler",1);
+    }
     }
 }

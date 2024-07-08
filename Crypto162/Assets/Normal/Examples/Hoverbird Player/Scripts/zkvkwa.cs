@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Normal.Realtime;
 public class zkvkwa : MonoBehaviour
 {
     public int Zkvkwa;
     public float GameTimer;
     public float CoinCryptoCurrency;
+    public GameObject coinCryptoObjecttOKEN;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,13 @@ public class zkvkwa : MonoBehaviour
         if(Zkvkwa>80)
         {
             Destroy(gameObject);
+            Zkvkwa+=(int)CoinCryptoCurrency;//Game time depends on CoinCrypto
+            if(coinCryptoObjecttOKEN!=null)
+            {
+            Realtime.Destroy(coinCryptoObjecttOKEN);
+            Destroy(coinCryptoObjecttOKEN);
+            }
         }
+
     }
 }

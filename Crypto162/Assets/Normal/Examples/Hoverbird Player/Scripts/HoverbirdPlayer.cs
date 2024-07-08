@@ -67,8 +67,11 @@ using Normal.Realtime;
             {
                 if(SimpleInput.GetButtonDown("UltiBot4"))
                 {
-                    speedMult=9f;
+                    if(PlayerPrefs.GetInt("hro")==3)//if it isnt idle, and ready to walk
+                    {
+                    speedMult=7.5f;
                     Invoke("doneSprint",0.4f);
+                    }
                 }
                 if(gameObject.transform.position.y>24)
                 {

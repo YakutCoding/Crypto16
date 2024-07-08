@@ -11,7 +11,7 @@ namespace Normal.Realtime.Examples {
         private NormcoreAppSettings[][] groupAppSettings;
         private Realtime _realtime;bool disc;
         public Animator pingk;
-        public GameObject playercount,uicount;HoverbirdPlayer plat;
+        public GameObject playercount,uicount,lolor;HoverbirdPlayer plat;
         public TextMeshProUGUI pingText;
         
         private void Awake() {
@@ -61,6 +61,7 @@ _realtime.didConnectToRoom += DidConnectToRoom;
             GameObject playerGameObject = Realtime.Instantiate(_prefab.name, options);
 playercount.SetActive(true);
 uicount.SetActive(true);
+lolor.SetActive(false);
             // Get a reference to the player
             HoverbirdPlayer player = playerGameObject.GetComponent<HoverbirdPlayer>();
 

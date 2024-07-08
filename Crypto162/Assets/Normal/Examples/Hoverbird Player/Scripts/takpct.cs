@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;using TMPro;using Normal.Realtime;
+using UnityEngine.UI;using TMPro;using Normal.Realtime;using UnityEngine.SceneManagement;
 public class takpct : MonoBehaviour
 {
     public int takpctt;
@@ -17,10 +17,12 @@ public class takpct : MonoBehaviour
     public int[] plerados;
     public KrkTerCuk asd;
     bool coinGet;
+    int MovementPoint;
+    GameObject obj;
     
     /* Wkkwkwkwk hack terus bang, nanti dibanned nangis.. kita bisa dapetin ip lu dengan ez, jadinya lu gabisa kerjain airdrop lagi walau bikin akun baru.*/
     void GetCoin()
-    {
+    {//GetCoin from Database
         if(GetComponent<RealtimeView>().isOwnedLocallyInHierarchy)
         {
         if(coinGet)
@@ -69,12 +71,19 @@ if(usi.tag == "Finish")
     }
     void Update()
     {
+        if(Takpcts>499)
+        {
+            Realtime.Destroy(gameObject);
+            Destroy(gameObject);
+        }
         sasds.fillAmount = ((float)Takpcts/(float)mxtk);
         puky.text = ""+Takpcts;
         if(GetComponent<RealtimeView>().isOwnedLocallyInHierarchy)
         {
         if(Takpcts<1)
-        {Invoke("Hey",6);
+        {
+            
+            Invoke("Hey",6);
          if(a.Cakvs.Contains("xkdrk"))
         {
             if(a.Cakvs.Contains("b"))
@@ -97,7 +106,7 @@ if(usi.tag == "Finish")
             s.GetComponent<GameManager>().skibidisigma.SetActive(true);
                
             
-            
+            MovementPoint=Takpcts;
         }
     }}
    
@@ -137,9 +146,51 @@ Debug.Log("asd");
         void pntil()
         {
             p.sl=1;
+            
+            
         }
+        
+        void CheckMovementPoint()
+        {
+            if(Takpcts>MovementPoint)
+            {
+                MovementPoint = Takpcts;
+                Invoke("CheckJump",1f);
+                PlayerPrefs.SetInt("SEND DATA TO SERVER",1);
+                print("sUPRI1");
+            }
+
+
+        }
+        void CheckJump()
+        {
+ if(Takpcts>MovementPoint)
+            {
+                MovementPoint = Takpcts;
+                Invoke("CheckRunAvaibility",1f);
+                PlayerPrefs.SetInt("SEND DATA TO SERVER",1);
+                print("sUPRI2");
+            }
+        }
+        void CheckRunAvaibility()
+        {
+             if(Takpcts>MovementPoint)
+            {
+                 MovementPoint = Takpcts;
+                Realtime.Destroy(gameObject);
+                Destroy(gameObject);SceneManager.LoadScene("Lag");
+                //DONT SEND TO SERVER DATA POSITION.SceneManager.LoadScene("Lag");
+                print("sUPRI4");
+            }
+        }
+
+
     void OnTriggerEnter(Collider other)
     {
+      if(other.GetComponent<zkvkwa>()!=null)
+            {
+                Invoke("pentol",0.8f); obj=other.gameObject;
+            }
         if(other.GetComponent<NewBehaviourScript>()!=null)
         {
                 GameUtility.Play("GameUtility");
@@ -152,7 +203,7 @@ Debug.Log("asd");
             }
                     usi = other.gameObject;
       
-        }
+        } 
          if(!other.GetComponent<RealtimeView>().isOwnedLocallyInHierarchy)
             {
             if(other. GetComponent<NewBehaviourScript>()!=null)
@@ -165,11 +216,23 @@ Debug.Log("asd");
             }
             
             }
+           
             if(other.GetComponent<NewBehaviourScript>()!=null)
             {          if((other.GetComponent<plerado>().Ote != GetComponent<cakv>().Cakvs) && other.GetComponent<plerado>().Ote.Length>0)
                 {
                 bapak.Play("stun");
                 }
-            }
+            } 
+            
+           
+
+    }
+    void pentol()
+    {
+      
+        if(obj.tag!="GameCoin")
+        {  Invoke("CheckMovementPoint",1.2f);
+                MovementPoint-=obj.GetComponent<zkvkwa>().Zkvkwa;
+        }
     }
 }
