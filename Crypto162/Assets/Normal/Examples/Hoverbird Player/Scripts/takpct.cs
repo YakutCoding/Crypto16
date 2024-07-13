@@ -20,7 +20,7 @@ public class takpct : MonoBehaviour
     int MovementPoint;
     GameObject obj;
     
-    /* Wkkwkwkwk hack terus bang, nanti dibanned nangis.. kita bisa dapetin ip lu dengan ez, jadinya lu gabisa kerjain airdrop lagi walau bikin akun baru.*/
+    /* Wkkwkwkwk hack terus bang, nanti dibanned nangis.*/
     void GetCoin()
     {//GetCoin from Database
         if(GetComponent<RealtimeView>().isOwnedLocallyInHierarchy)
@@ -36,7 +36,7 @@ public class takpct : MonoBehaviour
         Invoke("GetCoin",0.5f);
     }
     void Start()
-    {Invoke("GetCoin",0.5f);
+    {
         Invoke("CoinDrop",1);
     }
     void CoinDrop()

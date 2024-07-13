@@ -1,6 +1,6 @@
 using UnityEngine;
 using TMPro;
-
+using UnityEngine.SceneManagement;
 public class niipzixr : MonoBehaviour
 {
     public TextMeshProUGUI shiudfhsifhisa;
@@ -18,10 +18,15 @@ public class niipzixr : MonoBehaviour
         adfjioas.SetActive(false);
         bnmqwert = false;
         zxcvnqwe = anjo[PlayerPrefs.GetInt("hro")];        qwertyasdf = anjo[PlayerPrefs.GetInt("hro")];
+
     }
 
     void Update()
     {
+        if(zxcvnqwe<anjo[PlayerPrefs.GetInt("hro")]-1)
+        {
+            SceneManager.LoadScene("Lag");
+        }
         if (bnmqwert)
         {
             qwertyasdf -= Time.deltaTime;

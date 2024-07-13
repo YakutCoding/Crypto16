@@ -11,7 +11,7 @@ namespace Normal.Realtime.Examples {
         private NormcoreAppSettings[][] groupAppSettings;
         private Realtime _realtime;bool disc;
         public Animator pingk;
-        public GameObject playercount,uicount,lolor;HoverbirdPlayer plat;
+        public GameObject playercount,uicount,lolor,elelt,elelts;HoverbirdPlayer plat;
         public TextMeshProUGUI pingText;
         
         private void Awake() {
@@ -62,6 +62,7 @@ _realtime.didConnectToRoom += DidConnectToRoom;
 playercount.SetActive(true);
 uicount.SetActive(true);
 lolor.SetActive(false);
+elelt.SetActive(true);elelts.SetActive(true);
             // Get a reference to the player
             HoverbirdPlayer player = playerGameObject.GetComponent<HoverbirdPlayer>();
 
@@ -74,7 +75,7 @@ lolor.SetActive(false);
             int constraintIndex = cameraConstraint.AddSource(constraintSource);
 
             // Set the camera offset so it acts like a third-person camera.
-            cameraConstraint.SetTranslationOffset(constraintIndex, new Vector3( 0.0f,  5.2f, -34.9f));
+            cameraConstraint.SetTranslationOffset(constraintIndex, new Vector3( 0.0f,  5.5f, -29.2f));
             cameraConstraint.SetRotationOffset   (constraintIndex, new Vector3(15.0f,  0.0f,  0.0f));
         }
         void Update()
