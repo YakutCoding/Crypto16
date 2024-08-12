@@ -12,7 +12,7 @@ namespace Normal.Realtime.Examples {
         private Realtime _realtime;bool disc;
         public Animator pingk;
         public GameObject playercount,uicount,lolor,elelt,elelts;HoverbirdPlayer plat;
-        public TextMeshProUGUI pingText;
+        public TextMeshProUGUI pingText,rum;
         
         private void Awake() {
             // Get the Realtime component on this game object
@@ -80,6 +80,7 @@ elelt.SetActive(true);elelts.SetActive(true);
         }
         void Update()
         {
+            rum.text = "Room "+ PlayerPrefs.GetInt("Room");
             float Ping = _realtime.ping;
             bool StatusRoom = _realtime.disconnected;
             pingText.text = ((int)(Ping/4)).ToString() + " ms";

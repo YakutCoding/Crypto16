@@ -43,7 +43,7 @@ public class sslooaspew : MonoBehaviour
     }
     public void kntol()
     {
-        PlayerPrefs.SetInt("LengthUI",Random.Range(1,9999999));
+        
     }
 
     private void _f()
