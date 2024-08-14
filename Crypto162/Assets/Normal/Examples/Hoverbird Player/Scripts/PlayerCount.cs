@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using TMPro;using Dan.Demo;
 using UnityEngine.SceneManagement;using Normal.Realtime;
 public class PlayerCount : MonoBehaviour
 {
@@ -14,6 +14,7 @@ public class PlayerCount : MonoBehaviour
     public pentilebabi tetaelek;
     public bool AvaibleToWithdraw=true;
     bool Plor;
+    public LeaderboardShowcase l;
     // Start is called before the first frame update
     void Start()
     {
@@ -117,6 +118,7 @@ void susu()
     Plor=true;
     tetaelek.peler = false;
     AvaibleToWithdraw=false;
+    l.p();
         }
         if(Asdf<40)
         {

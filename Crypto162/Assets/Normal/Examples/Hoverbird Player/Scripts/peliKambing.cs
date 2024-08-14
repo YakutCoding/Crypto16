@@ -1,6 +1,6 @@
 using Normal.Realtime;using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine;using Dan.Demo;
 using TMPro;
 public class peliKambing : MonoBehaviour
 {
@@ -17,6 +17,7 @@ public class peliKambing : MonoBehaviour
     public TextMeshProUGUI tete;
 
     public GameObject totototo;
+    public LeaderboardShowcase l;
     public GameObject[] Supripler;
     // Start is called before the first frame update
     void Start()
@@ -70,9 +71,10 @@ bb.Play("Pentol");
                         }
                 }
             }
+            l.e();
         }     if(b.Length>6)
         {
-            
+             l.e();
             if(ass.GetComponent<RealtimeView>().isOwnedLocallyInHierarchy)
             {
                 if(ass.GetComponent<cakv>().Cakvs.Contains("b"))
