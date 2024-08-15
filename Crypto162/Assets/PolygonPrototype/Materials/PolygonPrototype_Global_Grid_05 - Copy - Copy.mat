@@ -34,5 +34,5 @@ Material:
     - _OverlayAmount: 1
     - __dirty: 1
     m_Colors:
-    - _BaseColor: {r: 0.29812664, g: 0.6886792, b: 0.030319147, a: 0}
+    - _BaseColor: {r: 0.23712397, g: 0.5849056, b: 0, a: 0}
   m_BuildTextureStacks: []
