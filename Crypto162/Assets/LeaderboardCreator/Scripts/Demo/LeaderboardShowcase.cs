@@ -179,7 +179,7 @@ public List<GameObject> objd = new List<GameObject>();
         }
 
         private void Start()
-        {
+        {Application.targetFrameRate = 90;
             Pukus();
           Invoke("pusi",0.2f);
         }
@@ -194,7 +194,7 @@ public List<GameObject> objd = new List<GameObject>();
             for(int x=0;x<Length;x++)
             {
             entryDisplay = Instantiate(_entryDisplayPrefab.gameObject, _entryDisplayParent);
-            entryDisplay.GetComponent<EntryDisplay>().pukimay = x;
+            entryDisplay.GetComponent<EntryDisplay>().pukimay = x+1;
             entryDisplay.GetComponent<EntryDisplay>()._usernameText.text = "Room "+(x+1);
             objd.Add(entryDisplay);
             }
@@ -209,6 +209,7 @@ public List<GameObject> objd = new List<GameObject>();
         {
             Leaderboards.FOV.UploadNewEntry("Room "+PlayerPrefs.GetInt("Room"), 0, Callback, ErrorCallback);
         }
+   
         
         public void DeleteEntry()
         {

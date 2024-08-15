@@ -18,6 +18,7 @@ public class PlayerCount : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Application.targetFrameRate = 90;
         Invoke("Pentil",0.3f);
         Invoke("pler",1f);
     }

@@ -2870,6 +2870,7 @@ MonoBehaviour:
   UI_Button_Attack: {fileID: 0}
   ButtonAttackCode: 0
   _c: 0
+  firstlengthofUI: 0
 --- !u!4 &165771205
 Transform:
   m_ObjectHideFlags: 0
@@ -29470,7 +29471,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.68994516, b: 0, a: 0.13333334}
+      maxColor: {r: 1, g: 0.6901961, b: 0, a: 0.39607844}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -29534,7 +29535,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 17.9
+      scalar: 50.82
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -30117,7 +30118,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 25
+      scalar: 4
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -44276,14 +44277,14 @@ MonoBehaviour:
   _entryDisplayPrefab: {fileID: -295299235028769080, guid: 188bdb8a837f74c4087c00cbf810b79c, type: 3}
   _leaderboardLoadingPanel: {fileID: 1944864664}
   entryDisplay: {fileID: 0}
-  Length: 2
+  Length: 50
   obj: []
   objd: []
   _timePeriodDropdown: {fileID: 1988392966}
   _pageInput: {fileID: 1718182613}
   _entriesToTakeInput: {fileID: 644610887}
   _defaultPageNumber: 1
-  _defaultEntriesToTake: 2
+  _defaultEntriesToTake: 50
   _personalEntryPanel: {fileID: 1419823726}
   _personalEntryText: {fileID: 236517181}
 --- !u!4 &1748906828

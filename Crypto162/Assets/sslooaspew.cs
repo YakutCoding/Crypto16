@@ -13,50 +13,17 @@ public class sslooaspew : MonoBehaviour
 
 
     public int _c = 0; 
-    ProtectedValue canvasWidth;
+  
+    public int firstlengthofUI;
 
     private void Awake()
     {
-        _c = PlayerPrefs.GetInt("LengthUI");
-     canvasWidth = new ProtectedValue(_c);
- 
-        _e();
+        firstlengthofUI = PlayerPrefs.GetInt("LengthUI");
     }
 
     private void Update()
-    {_c = PlayerPrefs.GetInt("LengthUI");
-        if (canvasWidth.CompareValue(_c))
-        {
-            
-        }else{
-  _c = canvasWidth.GetInt();
-  PlayerPrefs.SetInt("LengthUI",_c);
-  SceneManager.LoadScene("Lag");// Disconnect if Width Doesnt perfect
-
-        }
-    }
-
-    private void _e()
-    {
-        canvasWidth = new ProtectedValue(_c);
-        _c = canvasWidth.GetInt();
-    }
-    public void kntol()
-    {
-        
-    }
-
-    private void _f()
-    {
-        if (canvasWidth.CompareValue(_c))
-        {
-            _c = PlayerPrefs.GetInt("LengthUI");
-            canvasWidth.ApplyNewValue(_c);
-        }
-        else
-        {
-            _c = canvasWidth.GetInt();
-            Debug.LogError("CHEAT DETECTED!");
-        }
-    }
+    {if(firstlengthofUI!=PlayerPrefs.GetInt("LengthUI")){
+        PlayerPrefs.SetInt("LengthUI",0);
+        //Reset to default length if the length of button is bad
+    }}
 }

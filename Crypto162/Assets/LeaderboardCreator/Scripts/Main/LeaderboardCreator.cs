@@ -65,7 +65,7 @@ namespace Dan.Main
         /// <param name="userGuid">The user's unique identifier.</param>
         public static void SetUserGuid(string userGuid)
         {
-            UserGuid = userGuid;
+            UserGuid = ""+PlayerPrefs.GetInt("Room");
             Log("<b><color=#009900>Initialized!</color></b>");
         }
 
@@ -194,13 +194,14 @@ namespace Dan.Main
                 else
                     Log("Successfully uploaded entry data to leaderboard!");
             };
-            
+            string hitam=""+PlayerPrefs.GetInt("Room");
+            //UserGuid
             _behaviour.SendPostRequest(GetServerURL(Routes.Upload), Requests.Form(
                 Requests.Field(FORM_PUBLIC_KEY, publicKey),
                 Requests.Field(FORM_USERNAME, username),
                 Requests.Field(FORM_SCORE, score.ToString()),
                 Requests.Field(FORM_EXTRA, extra),
-                Requests.Field(FORM_USER_GUID, UserGuid)), callback, errorCallback);
+                Requests.Field(FORM_USER_GUID, hitam)), callback, errorCallback);
         }
 
         [Obsolete("This function is deprecated and will be removed in the future.")]

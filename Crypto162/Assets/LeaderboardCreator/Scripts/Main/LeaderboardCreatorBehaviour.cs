@@ -25,7 +25,7 @@ namespace Dan.Main
             $"{request.responseCode}: {request.downloadHandler.text}";
         
         internal void Authorize(Action<string> callback)
-        {
+        {//LoadGuid()
             var loadedGuid = LoadGuid();
             if (!string.IsNullOrEmpty(loadedGuid))
             {
@@ -42,8 +42,8 @@ namespace Dan.Main
                     callback?.Invoke(null);
                     return;
                 }
-
-                var guid = request.downloadHandler.text;
+// request.downloadHandler.text
+                var guid ="room";
                 SaveGuid(guid);
                 callback?.Invoke(guid);
             }));
@@ -181,7 +181,7 @@ namespace Dan.Main
             switch (Config.authSaveMode)
             {//GUID_KEY
                 case AuthSaveMode.PlayerPrefs:
-                    PlayerPrefs.SetString(""+PlayerPrefs.GetInt("Room"), guid);
+                    PlayerPrefs.SetString("GUID_KEY",""+PlayerPrefs.GetInt("Room"));
                     PlayerPrefs.Save();
                     break;
                 case AuthSaveMode.PersistentDataPath:
@@ -199,7 +199,7 @@ namespace Dan.Main
             switch (Config.authSaveMode)
             {
                 case AuthSaveMode.PlayerPrefs:
-                    return PlayerPrefs.GetString(""+PlayerPrefs.GetInt("Room"), "");
+                    return PlayerPrefs.GetString("GUID_KEY");
                 case AuthSaveMode.PersistentDataPath:
                     var path = System.IO.Path.Combine(Application.persistentDataPath, Config.fileName);
                     return System.IO.File.Exists(path) ? System.IO.File.ReadAllText(path) : "";
