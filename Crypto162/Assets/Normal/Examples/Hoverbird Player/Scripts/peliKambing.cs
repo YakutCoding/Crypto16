@@ -16,7 +16,7 @@ public class peliKambing : MonoBehaviour
     public Animator bb,rr;
     public TextMeshProUGUI tete;
 
-    public GameObject totototo;
+    public GameObject totototo,m,ll;
     public LeaderboardShowcase l;
     public GameObject[] Supripler;
     // Start is called before the first frame update
@@ -61,14 +61,14 @@ bb.Play("Pentol");
                         Vc.text = "VY";foreach(GameObject ad in Supripler)
                         {
                             Destroy(ad);
-                        }
+                        }m.SetActive(true);
                 }else{
  done.SetActive(true);Vc.color = asi;
                         Vc.text = "jkasdfjy";
                         foreach(GameObject ad in Supripler)
                         {
                             Destroy(ad);
-                        }
+                        }ll.SetActive(true);
                 }
             }
             l.e();
@@ -83,13 +83,13 @@ bb.Play("Pentol");
                         Vc.text = "VY";foreach(GameObject ad in Supripler)
                         {
                             Destroy(ad);
-                        }
+                        }m.SetActive(true);
                 }else{
  done.SetActive(true);Vc.color = asi;
                         Vc.text = "jkasdfjy";foreach(GameObject ad in Supripler)
                         {
                             Destroy(ad);
-                        }
+                        }ll.SetActive(true);
                 }
             }
         }}
