@@ -13,7 +13,7 @@ namespace Normal.Realtime.Examples {
         public Animator pingk;
         public GameObject playercount,uicount,lolor,elelt,elelts;HoverbirdPlayer plat;
         public TextMeshProUGUI pingText,rum;
-        
+        public bool off;
         private void Awake() {
             // Get the Realtime component on this game object
             _realtime = GetComponent<Realtime>();
@@ -45,9 +45,16 @@ namespace Normal.Realtime.Examples {
             
         }
             void Connect()
-            {
+            {_realtime.didConnectToRoom += DidConnectToRoom;
+                if(!off)
+                {
 _realtime.Connect(PlayerPrefs.GetInt("Room").ToString());
-_realtime.didConnectToRoom += DidConnectToRoom;
+                }else{
+                      _realtime.Connect(PlayerPrefs.GetInt("Room").ToString(), new Room.ConnectOptions {
+            offlineMode = true
+        });
+                }
+
 
             }
 

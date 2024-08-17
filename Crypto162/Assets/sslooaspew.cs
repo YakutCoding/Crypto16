@@ -25,5 +25,7 @@ public class sslooaspew : MonoBehaviour
     {if(firstlengthofUI!=PlayerPrefs.GetInt("LengthUI")){
         PlayerPrefs.SetInt("LengthUI",0);
         //Reset to default length if the length of button is bad
-    }}
+    }
+    
+    }
 }
