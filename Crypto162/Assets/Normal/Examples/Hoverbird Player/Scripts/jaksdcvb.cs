@@ -12,7 +12,9 @@ public class jaksdcvb : MonoBehaviour {
    [SerializeField] Text c;
    [SerializeField] RawImage d;
 
-   string e = "https://yakutcoding.github.io/plyrMovmntblitz/playerDelay.json";
+   public string e = "";
+   public GameObject b;
+   public int af;
 
    void Start() {
       StartCoroutine(F(e));
@@ -29,7 +31,12 @@ public class jaksdcvb : MonoBehaviour {
       } else {
          // SUCESS, JOIN GAME, SPAWN CHARACTER
          A i = JsonUtility.FromJson<A>(h.downloadHandler.text);
-         //sup.delayJoin = i.GameDelayJoin;
+         int id =i.GameDelayJoin;
+         if(id>af)
+         {
+b.SetActive(true);
+PlayerPrefs.SetInt("SpawnChar",1);
+         }
       
       }
       
