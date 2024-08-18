@@ -13,7 +13,7 @@ public GameObject a,b;
 public void sigma()
 { a.SetActive(false);
     b.SetActive(false);
-   Invoke("sugma",32);
+   Invoke("sugma",35);
 }
 void sugma()
 {

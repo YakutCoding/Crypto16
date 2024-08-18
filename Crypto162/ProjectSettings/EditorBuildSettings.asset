@@ -23,5 +23,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Awal.unity
     guid: 64dfe2b88ba625446a53e4f068ca46c9
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 432535476d2fffa449197cb5b78a05db
+  - enabled: 1
+    path: Assets/Scenes/Train.unity
+    guid: 1c98902c23a2b344697282e679fb1605
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
