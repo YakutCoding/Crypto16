@@ -12,7 +12,7 @@ public struct A {
 public class jaksdcvb : MonoBehaviour {
    [SerializeField] Text c;
    [SerializeField] RawImage d;
-   public TextMeshProUGUI ts;
+   public TextMeshProUGUI ts,td;
 
    public string e = "";
    public GameObject b;
@@ -42,7 +42,7 @@ PlayerPrefs.SetInt("SpawnChar",1);
          PlayerPrefs.SetInt("UI SETTED LENGTH",1);
          float ad = (float)(PlayerPrefs.GetInt("LengthUI"));
          float sb = (float)i.saf;
-  
+  td.text = ""+sb;
          ts.text= ""+(float)(ad/sb);
       
       }
