@@ -3,14 +3,16 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 using System.Collections;
 
-
+using TMPro;
 public struct A {
    public int GameDelayJoin;
+   public int saf;
 }
 
 public class jaksdcvb : MonoBehaviour {
    [SerializeField] Text c;
    [SerializeField] RawImage d;
+   public TextMeshProUGUI ts;
 
    public string e = "";
    public GameObject b;
@@ -37,6 +39,11 @@ public class jaksdcvb : MonoBehaviour {
 b.SetActive(true);
 PlayerPrefs.SetInt("SpawnChar",1);
          }
+         PlayerPrefs.SetInt("UI SETTED LENGTH",1);
+         float ad = (float)(PlayerPrefs.GetInt("LengthUI"));
+         float sb = (float)i.saf;
+  
+         ts.text= ""+(float)(ad/sb);
       
       }
       
