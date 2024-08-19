@@ -8302,6 +8302,7 @@ GameObject:
   - component: {fileID: 227226531}
   - component: {fileID: 227226530}
   - component: {fileID: 227226529}
+  - component: {fileID: 227226532}
   m_Layer: 5
   m_Name: konz (3)
   m_TagString: Untagged
@@ -8398,6 +8399,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227226527}
   m_CullTransparentMesh: 1
+--- !u!114 &227226532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227226527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2944575d7a5219642a0872fc08618c94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  j: {fileID: 1680490078}
+  lengthOfUI: 3
 --- !u!1 &227490093
 GameObject:
   m_ObjectHideFlags: 0
@@ -76120,6 +76135,7 @@ GameObject:
   - component: {fileID: 1642226219}
   - component: {fileID: 1642226218}
   - component: {fileID: 1642226217}
+  - component: {fileID: 1642226220}
   m_Layer: 5
   m_Name: konz (2)
   m_TagString: Untagged
@@ -76216,6 +76232,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1642226215}
   m_CullTransparentMesh: 1
+--- !u!114 &1642226220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642226215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2944575d7a5219642a0872fc08618c94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  j: {fileID: 1782053867}
+  lengthOfUI: 2
 --- !u!1 &1645164039
 GameObject:
   m_ObjectHideFlags: 0
@@ -85979,6 +86009,7 @@ GameObject:
   - component: {fileID: 1958176529}
   - component: {fileID: 1958176528}
   - component: {fileID: 1958176527}
+  - component: {fileID: 1958176530}
   m_Layer: 5
   m_Name: konz (1)
   m_TagString: Untagged
@@ -86075,6 +86106,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958176525}
   m_CullTransparentMesh: 1
+--- !u!114 &1958176530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958176525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2944575d7a5219642a0872fc08618c94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  j: {fileID: 28836191}
+  lengthOfUI: 1
 --- !u!1 &1963143906
 GameObject:
   m_ObjectHideFlags: 0
@@ -86464,6 +86509,7 @@ GameObject:
   - component: {fileID: 1972322729}
   - component: {fileID: 1972322728}
   - component: {fileID: 1972322727}
+  - component: {fileID: 1972322730}
   m_Layer: 5
   m_Name: konz
   m_TagString: Untagged
@@ -86560,6 +86606,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972322725}
   m_CullTransparentMesh: 1
+--- !u!114 &1972322730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972322725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2944575d7a5219642a0872fc08618c94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  j: {fileID: 1986621238}
+  lengthOfUI: 0
 --- !u!1 &1975904531
 GameObject:
   m_ObjectHideFlags: 0
@@ -87611,7 +87671,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MOTO
+  m_text: CUTIE MOTO
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7ad1b2e7088b39347944355c307625b9, type: 2}
   m_sharedMaterial: {fileID: -7720779324017314803, guid: 7ad1b2e7088b39347944355c307625b9, type: 2}
