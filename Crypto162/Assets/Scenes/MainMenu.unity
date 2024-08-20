@@ -6068,7 +6068,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -345.6, y: 29.5}
+  m_AnchoredPosition: {x: -344.8, y: 21.09999}
   m_SizeDelta: {x: 61.8911, y: 36.0776}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &160427708
@@ -18675,6 +18675,7 @@ GameObject:
   - component: {fileID: 497145019}
   - component: {fileID: 497145018}
   - component: {fileID: 497145022}
+  - component: {fileID: 497145023}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -18800,6 +18801,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   t: {fileID: 740871241}
+  status: {fileID: 0}
+--- !u!114 &497145023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497145017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde812d1dbdb79147ad91a9c7c9b60e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  t: {fileID: 1208218924}
 --- !u!1 &497825515
 GameObject:
   m_ObjectHideFlags: 0
@@ -61913,10 +61928,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 30
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 16
@@ -70076,7 +70091,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472915433}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cd7cf3e4d85cba49ac6989402d86e85, type: 3}
   m_Name: 
@@ -75034,7 +75049,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -318.1, y: 73}
+  m_AnchoredPosition: {x: -317.3, y: 64.6}
   m_SizeDelta: {x: 109.353, y: 36.0776}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1613432932

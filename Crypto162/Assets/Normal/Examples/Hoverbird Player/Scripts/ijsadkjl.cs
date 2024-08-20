@@ -10,7 +10,7 @@ public class ijsadkjl : MonoBehaviour
 
     void Update()
     {
-        UI_SENDMEX.text = ""+(ass.firstlengthofUI+10); //plus 10 pixel
+        UI_SENDMEX.text = ""+(PlayerPrefs.GetInt("LengthUI")+10); //plus 10 pixel
         Debug.Log("Test Width And Length UI Set successfull");
     }
 }
