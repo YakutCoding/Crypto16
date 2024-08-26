@@ -57,6 +57,10 @@ public class takpct : MonoBehaviour
                     GameObject GameCoin = Realtime.Instantiate("GameCoin",gameObject.transform.position,gameObject.transform.rotation);
                     GameCoin.GetComponent<cqczvl>().kntl = ""+usi.GetComponent<zkvkwa>().Zkvkwa;
                     GameCoin.GetComponent<cqczvl>().kolor=gameObject;
+                    if(usi.gameObject.name == "celi")
+                    {
+                        Destroy(usi);
+                    }
                 }
             }else{
 if(usi.tag == "Finish")
@@ -185,7 +189,7 @@ Debug.Log("asd");
         }
 
 
-    void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
       if(other.GetComponent<zkvkwa>()!=null)
             {

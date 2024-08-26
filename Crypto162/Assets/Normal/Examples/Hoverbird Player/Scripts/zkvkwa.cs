@@ -8,6 +8,7 @@ public class zkvkwa : MonoBehaviour
     public float GameTimer;
     public float CoinCryptoCurrency;
     public GameObject coinCryptoObjecttOKEN;
+    public bool isd;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,5 +30,9 @@ public class zkvkwa : MonoBehaviour
             }
         }
 
+    }
+    void OnTriggerEnter(Collider otehr)
+    {
+      
     }
 }

@@ -2,7 +2,7 @@
 
 using UnityEngine;
 using UnityEngine.Animations;
-using TMPro;using UnityEngine.SceneManagement;
+using TMPro;using UnityEngine.SceneManagement;using Normal.Realtime.Serialization;
 namespace Normal.Realtime.Examples {
     public class HoverbirdPlayerManager : MonoBehaviour {
         [SerializeField] private GameObject _camera = default;
@@ -14,11 +14,22 @@ namespace Normal.Realtime.Examples {
         public GameObject playercount,uicount,lolor,elelt,elelts;HoverbirdPlayer plat;
         public TextMeshProUGUI pingText,rum;
         public bool off;
+        void kontolhitam()
+        {
+            if(_realtime.connected){
+
+            }else{
+               PlayerPrefs.SetInt("kntl",1);
+               SceneManager.LoadScene("Train");
+            }
+        }
         private void Awake() {
+          Invoke("kontolhitam",10);
+
             // Get the Realtime component on this game object
             _realtime = GetComponent<Realtime>();
             int groupCount = (Server.Length + 15) / 16; // Menghitung jumlah grup
-
+       
             groupAppSettings = new NormcoreAppSettings[groupCount][];
 
             for (int x = 0; x < groupCount; x++)
@@ -85,8 +96,9 @@ elelt.SetActive(true);elelts.SetActive(true);
             cameraConstraint.SetTranslationOffset(constraintIndex, new Vector3( 0.0f,  5.5f, -29.2f));
             cameraConstraint.SetRotationOffset   (constraintIndex, new Vector3(15.0f,  0.0f,  0.0f));
         }
+
         void Update()
-        {
+        {     
             rum.text = "Room "+ PlayerPrefs.GetInt("Room");
             float Ping = _realtime.ping;
             bool StatusRoom = _realtime.disconnected;

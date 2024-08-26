@@ -684,6 +684,7 @@ MonoBehaviour:
   GameTimer: 2
   CoinCryptoCurrency: 21
   coinCryptoObjecttOKEN: {fileID: 1928494231220718911}
+  isd: 0
 --- !u!1 &82933762960336116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1372,6 +1373,7 @@ MonoBehaviour:
   GameTimer: 2
   CoinCryptoCurrency: 21
   coinCryptoObjecttOKEN: {fileID: 1928494231220718911}
+  isd: 0
 --- !u!1 &190444251560017877
 GameObject:
   m_ObjectHideFlags: 0
@@ -8444,6 +8446,7 @@ MonoBehaviour:
   GameTimer: 2
   CoinCryptoCurrency: 21
   coinCryptoObjecttOKEN: {fileID: 1928494231220718911}
+  isd: 0
 --- !u!1 &1040884394489808513
 GameObject:
   m_ObjectHideFlags: 0
@@ -9568,6 +9571,7 @@ MonoBehaviour:
   GameTimer: 2
   CoinCryptoCurrency: 21
   coinCryptoObjecttOKEN: {fileID: 1928494231220718911}
+  isd: 0
 --- !u!1 &1350691138464283173
 GameObject:
   m_ObjectHideFlags: 0
@@ -11499,6 +11503,7 @@ MonoBehaviour:
   GameTimer: 2
   CoinCryptoCurrency: 21
   coinCryptoObjecttOKEN: {fileID: 1928494231220718911}
+  isd: 0
 --- !u!1 &1825749688467568088
 GameObject:
   m_ObjectHideFlags: 0
@@ -13948,6 +13953,7 @@ MonoBehaviour:
   GameTimer: 2
   CoinCryptoCurrency: 21
   coinCryptoObjecttOKEN: {fileID: 1928494231220718911}
+  isd: 0
 --- !u!1 &2485860521733663062
 GameObject:
   m_ObjectHideFlags: 0
@@ -15448,6 +15454,7 @@ MonoBehaviour:
   GameTimer: 2
   CoinCryptoCurrency: 21
   coinCryptoObjecttOKEN: {fileID: 1928494231220718911}
+  isd: 0
 --- !u!1 &2764329946637952204
 GameObject:
   m_ObjectHideFlags: 0
@@ -20565,6 +20572,7 @@ MonoBehaviour:
   GameTimer: 2
   CoinCryptoCurrency: 21
   coinCryptoObjecttOKEN: {fileID: 1928494231220718911}
+  isd: 0
 --- !u!82 &2518233066257194129
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22131,6 +22139,7 @@ MonoBehaviour:
   GameTimer: 2
   CoinCryptoCurrency: 21
   coinCryptoObjecttOKEN: {fileID: 1928494231220718911}
+  isd: 0
 --- !u!1 &4407119640072643576
 GameObject:
   m_ObjectHideFlags: 0
@@ -33489,6 +33498,7 @@ MonoBehaviour:
   GameTimer: 2
   CoinCryptoCurrency: 21
   coinCryptoObjecttOKEN: {fileID: 1928494231220718911}
+  isd: 0
 --- !u!1 &6147947748839742777
 GameObject:
   m_ObjectHideFlags: 0
@@ -44650,6 +44660,7 @@ MonoBehaviour:
   GameTimer: 2
   CoinCryptoCurrency: 21
   coinCryptoObjecttOKEN: {fileID: 1928494231220718911}
+  isd: 0
 --- !u!1 &8033321817201666206
 GameObject:
   m_ObjectHideFlags: 0
@@ -44871,6 +44882,7 @@ MonoBehaviour:
   GameTimer: 2
   CoinCryptoCurrency: 21
   coinCryptoObjecttOKEN: {fileID: 1928494231220718911}
+  isd: 0
 --- !u!1 &8064605508367269660
 GameObject:
   m_ObjectHideFlags: 0
@@ -47114,6 +47126,7 @@ MonoBehaviour:
   GameTimer: 2
   CoinCryptoCurrency: 21
   coinCryptoObjecttOKEN: {fileID: 1928494231220718911}
+  isd: 0
 --- !u!82 &1395336803007012435
 AudioSource:
   m_ObjectHideFlags: 0
@@ -47396,6 +47409,7 @@ MonoBehaviour:
   GameTimer: 2
   CoinCryptoCurrency: 21
   coinCryptoObjecttOKEN: {fileID: 1928494231220718911}
+  isd: 0
 --- !u!1 &8871298427245502142
 GameObject:
   m_ObjectHideFlags: 0
@@ -48970,16 +48984,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9f4b50683484f2542ada4a260da19823, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.91117
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9f4b50683484f2542ada4a260da19823, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.72825
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9f4b50683484f2542ada4a260da19823, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.020535672
+      value: -0.022249
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9f4b50683484f2542ada4a260da19823, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7970707
+      value: 0.86454
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9f4b50683484f2542ada4a260da19823, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.06634308
+      value: 0.051927
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9f4b50683484f2542ada4a260da19823, type: 3}
       propertyPath: m_LocalRotation.w
