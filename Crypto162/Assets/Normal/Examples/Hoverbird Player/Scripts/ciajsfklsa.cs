@@ -18,9 +18,9 @@ public class ciajsfklsa : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if(other.name=="Sphere"&&other.GetComponent<plerekudajir>()!=null)
-        {
-           pusitaik.SetActive(true);
-        }
+       print("kntlcia"+other.gameObject.transform.parent.gameObject.name);
+           other.gameObject.transform.parent.GetComponent<takpct>().jkl();
+           
+        
     }
 }

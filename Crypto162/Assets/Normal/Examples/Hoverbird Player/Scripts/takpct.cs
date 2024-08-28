@@ -57,10 +57,7 @@ public class takpct : MonoBehaviour
                     GameObject GameCoin = Realtime.Instantiate("GameCoin",gameObject.transform.position,gameObject.transform.rotation);
                     GameCoin.GetComponent<cqczvl>().kntl = ""+usi.GetComponent<zkvkwa>().Zkvkwa;
                     GameCoin.GetComponent<cqczvl>().kolor=gameObject;
-                    if(usi.gameObject.name == "celi")
-                    {
-                        Destroy(usi);
-                    }
+                  
                 }
             }else{
 if(usi.tag == "Finish")
@@ -123,7 +120,13 @@ if(usi.tag == "Finish")
             coinGet=true;
         }
     }
-    void Hey()
+   public void jkl(){
+    int sdff=Random.Range(8,13);
+        Takpcts-=sdff;
+                    GameObject GameCoin = Realtime.Instantiate("GameCoin",gameObject.transform.position,gameObject.transform.rotation);
+                    GameCoin.GetComponent<cqczvl>().kntl = ""+sdff;
+                    GameCoin.GetComponent<cqczvl>().kolor=gameObject;
+    }    void Hey()
     {
             
               if(a.Cakvs.Length>0)
@@ -191,6 +194,7 @@ Debug.Log("asd");
 
     public void OnTriggerEnter(Collider other)
     {
+
       if(other.GetComponent<zkvkwa>()!=null)
             {
                 Invoke("pentol",0.8f); obj=other.gameObject;

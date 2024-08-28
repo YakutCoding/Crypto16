@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6400086195818180166}
   - component: {fileID: 2349976573031241524}
   - component: {fileID: 6234201584939022816}
+  - component: {fileID: 6483245218460189953}
   m_Layer: 0
   m_Name: celi
   m_TagString: GameController
@@ -28,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755037831420008728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0000015729}
-  m_LocalScale: {x: 3.40396, y: 3.40396, z: 3.40396}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00029696}
+  m_LocalScale: {x: 293.87067, y: 293.87067, z: 293.87067}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3448123033606551920}
@@ -123,6 +124,18 @@ MonoBehaviour:
   CoinCryptoCurrency: 0
   coinCryptoObjecttOKEN: {fileID: 0}
   isd: 1
+--- !u!114 &6483245218460189953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755037831420008728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 984e1eebf622eb34e8b8d44190166401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4023028214361504485
 GameObject:
   m_ObjectHideFlags: 0

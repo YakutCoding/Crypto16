@@ -8,6 +8,7 @@ public class kogjpd : MonoBehaviour
     public Image i;
     public int pler,pk;
     public TextMeshProUGUI t;
+    public GameObject sj;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,11 @@ public class kogjpd : MonoBehaviour
         if(other.tag=="Finish")
         {
             pler-=other.GetComponent<zkvkwa>().Zkvkwa;
+            if(pler<1)
+            {
+                Destroy(gameObject);
+                Instantiate(sj,gameObject.transform.position,gameObject.transform.rotation);
+            }
         }
     }
 }
