@@ -119,7 +119,10 @@ void susu()
     Plor=true;
     tetaelek.peler = false;
     AvaibleToWithdraw=false;
-    l.p();
+     if(b.Length>0&&r.Length>0)
+        { l.p();
+        }else{PlayerPrefs.SetInt("kntl",1);SceneManager.LoadScene("Train");
+   }
         }
         if(Asdf<40)
         {
@@ -140,9 +143,14 @@ void susu()
     {
         if(b.Length>0&&r.Length>0)
         {
+         
         Asdf-=1;
         }else{
-            Asdf=40;
+            Scene s = SceneManager.GetActiveScene();
+    if(s.name!="SampleScene")
+    {}else{
+            //40
+             Asdf-=1;}
         }
         Invoke("pler",1);
     }

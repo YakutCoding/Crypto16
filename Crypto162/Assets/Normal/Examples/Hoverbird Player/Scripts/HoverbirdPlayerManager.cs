@@ -24,7 +24,7 @@ namespace Normal.Realtime.Examples {
             }
         }
         private void Awake() {
-          Invoke("kontolhitam",10);
+          Invoke("kontolhitam",14);
 
             // Get the Realtime component on this game object
             _realtime = GetComponent<Realtime>();

@@ -7,7 +7,7 @@ public class teleksapi : MonoBehaviour
     public GameObject Sigma;
     public int kontoleayam;
     public TextMeshProUGUI plerekuda;
-    public GameObject kontolodon,tititearno;
+    public GameObject kontolodon,tititearno,tut,dor;
     bool puki;
     public adfhhuiadlfhi[] ajg;
     // Start is called before the first frame update
@@ -18,14 +18,18 @@ public class teleksapi : MonoBehaviour
     }
     void kntlesabi()
     {
-        kontolodon.SetActive(false);
+        kontolodon.SetActive(true);
         puki=true;
-    }
+    }bool kntl;
     void tititesapi()
     {
         if(puki)
         {
         kontoleayam-=1;
+        if(!kntl)
+        {
+        Instantiate(tut);
+        }
         }
                 Invoke("tititesapi",1);
     }
@@ -33,14 +37,18 @@ public class teleksapi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+       plerekuda.text=""+kontoleayam;
         if(kontoleayam==0)
         {
             Destroy(kontolodon);
+            tititearno.SetActive(true);
             foreach(adfhhuiadlfhi k in ajg)
             {
                 k.enabled=true;
             }
+            if(!kntl)
+            {
+            Instantiate(dor);kntl=true;}
         }
     }
 }

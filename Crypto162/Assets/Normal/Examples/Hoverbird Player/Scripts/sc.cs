@@ -8,10 +8,14 @@ public class sc : MonoBehaviour
     ]
     public float timer;
     public string pusi;
+    public bool awl;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(awl)
+        {
+        SceneManager.LoadScene(pusi);
+        }
     }
 
     // Update is called once per frame

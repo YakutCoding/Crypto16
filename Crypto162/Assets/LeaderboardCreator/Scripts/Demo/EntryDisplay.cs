@@ -25,8 +25,16 @@ namespace Dan.Demo
             }else{
                  _scoreText.text = "AVAIBLE";
             }
-            _timeText.text = $"{dateTime.Hour:00}:{dateTime.Minute:00}:{dateTime.Second:00} (UTC)\n{dateTime:dd/MM/yyyy}";
-            
+             var currentUtcTime = System.DateTime.UtcNow;
+            var timeDifference = currentUtcTime - dateTime;
+            if(timeDifference.TotalMinutes > 5)
+            {
+                _timeText.text = $"Time has exceeded 5 minutes since entry.\n{currentUtcTime:dd/MM/yyyy HH:mm:ss} (UTC)";
+            }
+            else
+            {
+                _timeText.text = $"{dateTime.Hour:00}:{dateTime.Minute:00}:{dateTime.Second:00} (UTC)\n{dateTime:dd/MM/yyyy}";
+            }
             GetComponent<Image>().color = entry.IsMine() ? Color.yellow : Color.white;
         }
         public void Gas()
