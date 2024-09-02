@@ -48543,7 +48543,7 @@ MonoBehaviour:
   td: {fileID: 1985362863}
   e: https://yakutcoding.github.io/plyrMovmntblitz/playerDelay.json
   b: {fileID: 1459508161}
-  af: 0
+  af: 1
 --- !u!1 &971641905
 GameObject:
   m_ObjectHideFlags: 0

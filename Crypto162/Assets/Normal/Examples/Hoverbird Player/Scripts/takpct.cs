@@ -195,10 +195,7 @@ Debug.Log("asd");
     public void fughj(Collider other)
     {
 
-      if(other.GetComponent<zkvkwa>()!=null)
-            {
-                Invoke("pentol",0.8f); obj=other.gameObject;
-            }
+    
         if(other.GetComponent<NewBehaviourScript>()!=null)
         {
                 GameUtility.Play("GameUtility");
@@ -220,6 +217,10 @@ Debug.Log("asd");
                 {
                 p.sl=0;
                 Invoke("pntil",other.GetComponent<NewBehaviourScript>().GameTime);
+                  if(other.GetComponent<zkvkwa>()!=null)
+            {
+                Invoke("pentol",0.8f); obj=other.gameObject;
+            }
                 }
             }
             

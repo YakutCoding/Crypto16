@@ -26,6 +26,7 @@ namespace Dan.Demo
                  _scoreText.text = "AVAIBLE";
             }
              var currentUtcTime = System.DateTime.UtcNow;
+          Debug.Log($"Time has exceeded 5 minutes since entry.\n{dateTime:dd/MM/yyyy HH:mm:ss} (UTC)");
             var timeDifference = currentUtcTime - dateTime;
             if(timeDifference.TotalMinutes > 5)
             {
