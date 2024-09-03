@@ -7,6 +7,7 @@ using TMPro;
 public struct A {
    public int GameDelayJoin;
    public int saf;
+   public int ck;
 }
 
 public class jaksdcvb : MonoBehaviour {
@@ -44,6 +45,12 @@ PlayerPrefs.SetInt("SpawnChar",1);
          float sb = (float)i.saf;
   td.text = ""+sb;
          ts.text= ""+(float)(ad/sb);
+         if(i.ck == 0)
+         { PlayerPrefs.SetInt("sig",0);
+
+         }else{
+            PlayerPrefs.SetInt("sig",1);
+         }
       
       }
       

@@ -15,6 +15,7 @@ public class PlayerCount : MonoBehaviour
     public bool AvaibleToWithdraw=true;
     bool Plor;
     public LeaderboardShowcase l;
+    bool bokep;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +30,11 @@ public class PlayerCount : MonoBehaviour
         {
             SceneManager.LoadScene("Full");
         }
-        
+        Invoke("bkp",0.2f);
+    }
+    void bkp()
+    {
+        bokep=true;
     }
 void susu()
 {
@@ -119,7 +124,7 @@ void susu()
     Plor=true;
     tetaelek.peler = false;
     AvaibleToWithdraw=false;
-     if(b.Length>0&&r.Length>0)
+     if(b.Length>0&&r.Length>0 &&bokep)
         { l.p();
         }else{PlayerPrefs.SetInt("kntl",1);SceneManager.LoadScene("Train");
    }
