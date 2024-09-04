@@ -6,15 +6,15 @@ using UnityEngine.SceneManagement;using Normal.Realtime;
 public class PlayerCount : MonoBehaviour
 {
     public int asdf;
-    public TextMeshProUGUI dpn,aseli,bl,rd,bld,rdd,pl;
+    public TextMeshProUGUI dpn,aseli,bl,rd,bld,rdd,pl,lks;
     public cakv[] b,r;
     public int Asdf{get=>asdf;set=>asdf=value;}
-    public GameObject pentil,rb,bb,misi,uicount,COLSAIDJSAI,camo,coma,cami,at,ut,pentol,pentileayam,pentilesapi,peju;
+    public GameObject pentil,rb,bb,misi,uicount,COLSAIDJSAI,camo,coma,cami,at,ut,pentol,pentileayam,pentilesapi,peju,sigma;
     public ParticleSystem bbb,rrr;
     public pentilebabi tetaelek;
     public bool AvaibleToWithdraw=true;
     bool Plor;
-    public LeaderboardShowcase l;
+    public peliKambing pel;    public LeaderboardShowcase l;
     bool bokep;
     // Start is called before the first frame update
     void Start()
@@ -85,7 +85,19 @@ void susu()
                 }}
             }
         }
-
+        Debug.Log("tempListB"+tempListB.ToArray().Length);
+          Debug.Log("tempListE"+tempListR.ToArray().Length);
+          if(tempListB.ToArray().Length>1 && tempListR.ToArray().Length>1){
+          pel.elss =6;
+          }else{
+            pel.elss=1;
+          }  lks.text= lks.text.Replace("d",(pel.elss+1).ToString());
+        if(pel.elss<3)
+        {
+            sigma.SetActive(true);
+        }else{
+            sigma.SetActive(false);
+        }
         // Mengkonversi list sementara ke dalam array r dan b
         r = tempListR.ToArray();
         b = tempListB.ToArray();

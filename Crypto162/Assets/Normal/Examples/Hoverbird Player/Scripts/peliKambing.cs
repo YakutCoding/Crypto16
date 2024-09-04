@@ -14,11 +14,13 @@ public class peliKambing : MonoBehaviour
     public Color asu,asi;
     public int curentb,curentr;
     public Animator bb,rr;
-    public TextMeshProUGUI tete;
+    public TextMeshProUGUI tete,lks;
 
     public GameObject totototo,m,ll;
     public LeaderboardShowcase l;
     public GameObject[] Supripler;
+    public int elss;
+    public GameObject sigma;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,7 +52,7 @@ bb.Play("Pentol");
         esek.text = pla.text;
         foreach(GameObject ass in pl)
             {
-        if(a.Length>6)
+        if(a.Length>elss)
         {
             
             if(ass.GetComponent<RealtimeView>().isOwnedLocallyInHierarchy)
@@ -72,7 +74,7 @@ bb.Play("Pentol");
                 }
             }
             l.e();
-        }     if(b.Length>6)
+        }     if(b.Length>elss)
         {
              l.e();
             if(ass.GetComponent<RealtimeView>().isOwnedLocallyInHierarchy)
@@ -109,7 +111,7 @@ bb.Play("Pentol");
                 C34kT(zX34l);
             }
         }
-        
+      
     }
     void C34kT(float tR90d)
     {

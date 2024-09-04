@@ -10,7 +10,7 @@ public class asdjkasl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
-        int ass = Random.Range(1,b);
+        int ass = Random.Range(a,b);
         PlayerPrefs.SetInt("WidthUI",PlayerPrefs.GetInt("LengthUI")+ass);
         PlayerPrefs.SetInt("ScaleUI",PlayerPrefs.GetInt("LengthUI")+ass);
         PlayerPrefs.SetInt("LengthUI",PlayerPrefs.GetInt("LengthUI")+ass);
