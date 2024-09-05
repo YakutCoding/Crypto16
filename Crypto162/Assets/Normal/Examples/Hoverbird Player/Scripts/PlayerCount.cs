@@ -91,7 +91,8 @@ void susu()
           pel.elss =6;
           }else{
             pel.elss=1;
-          }  lks.text= lks.text.Replace("d",(pel.elss+1).ToString());
+          }
+          if(pel.elss<5){lks.text= lks.text.Replace("d","<color=red>"+(pel.elss+1).ToString())+"</color>";}else{ lks.text= lks.text.Replace("d",(pel.elss+1).ToString());}
         if(pel.elss<3)
         {
             sigma.SetActive(true);

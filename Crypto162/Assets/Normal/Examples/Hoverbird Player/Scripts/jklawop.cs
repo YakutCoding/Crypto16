@@ -29,6 +29,7 @@ public class jklawop : MonoBehaviour
             C.SetActive(false);
         PlayerPrefs.SetInt("LengthUI",PlayerPrefs.GetInt("LengthUI")-UILengthStabilizer);
         PlayerPrefs.SetInt("WidthUI"+WidthUI,1);
+        PlayerPrefs.SetInt("WidthUIStabilizer",1);
         }
     }
     public void ButtonConfigInfo()
