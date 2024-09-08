@@ -21,7 +21,7 @@ public class PlayerCount : MonoBehaviour
     {
         Application.targetFrameRate = 90;
         Invoke("Pentil",0.3f);
-        Invoke("pler",1f);
+        Invoke("pler",1f);Invoke("bkp",1f);
     }
     void Pentil()
     {
@@ -30,7 +30,7 @@ public class PlayerCount : MonoBehaviour
         {
             SceneManager.LoadScene("Full");
         }
-        Invoke("bkp",0.2f);
+        
     }
     void bkp()
     {
@@ -92,7 +92,7 @@ void susu()
           }else{
             pel.elss=1;
           }
-          if(pel.elss<5){lks.text= lks.text.Replace("f","<color=red>"+(pel.elss+1).ToString())+"</color>";}else{ lks.text= lks.text.Replace("f",(pel.elss+1).ToString());}
+          if(pel.elss<3){lks.text= lks.text.Replace("f","<color=red>"+(pel.elss+1).ToString())+"</color>";}else{ lks.text= lks.text.Replace("f",(pel.elss+1).ToString());}
         if(pel.elss<3)
         {
             sigma.SetActive(true);
@@ -137,9 +137,10 @@ void susu()
     Plor=true;
     tetaelek.peler = false;
     AvaibleToWithdraw=false;
-     if(b.Length>0&&r.Length>0 &&bokep)
+
+     if(b.Length>0&&r.Length>0 && bokep)
         { l.p();
-        }else{PlayerPrefs.SetInt("kntl",1);SceneManager.LoadScene("Train");
+        }else{if(bokep){PlayerPrefs.SetInt("kntl",1);SceneManager.LoadScene("Train");}
    }
         }
         if(Asdf<40)

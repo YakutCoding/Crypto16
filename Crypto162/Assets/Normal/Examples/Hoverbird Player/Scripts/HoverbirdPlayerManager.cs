@@ -12,20 +12,36 @@ namespace Normal.Realtime.Examples {
         private Realtime _realtime;bool disc;
         public Animator pingk;
         public GameObject playercount,uicount,lolor,elelt,elelts;HoverbirdPlayer plat;
-        public TextMeshProUGUI pingText,rum;
+        public TextMeshProUGUI pingText,rum,sik;
+        public int skibidi;
         public bool off;
         void kontolhitam()
         {
             if(_realtime.connected){
-
+PlayerPrefs.SetInt("SGM",0);      PlayerPrefs.SetInt("skibidinew",0);
             }else{
+                if(PlayerPrefs.GetInt("SGM")<2)
+                {
+                PlayerPrefs.SetInt("SGM",PlayerPrefs.GetInt("SGM")+1);SceneManager.LoadScene("SampleScene");
+                }else{PlayerPrefs.SetInt("SGM",0);      PlayerPrefs.SetInt("skibidinew",0);
                PlayerPrefs.SetInt("kntl",1);
                SceneManager.LoadScene("Train");
+         
+                }
             }
         }
+        void sikmamale()
+        {skibidi++;
+            if(skibidi<10)
+            {
+sik.text = "0"+skibidi;}else{
+sik.text = ""+skibidi;
+}
+PlayerPrefs.SetInt("skibidinew",skibidi); Invoke("sikmamale",1);
+        }
         private void Awake() {
-          Invoke("kontolhitam",14);
-
+          Invoke("kontolhitam",12);skibidi = PlayerPrefs.GetInt("skibidinew",skibidi);
+            Invoke("sikmamale",0);
             // Get the Realtime component on this game object
             _realtime = GetComponent<Realtime>();
             int groupCount = (Server.Length + 15) / 16; // Menghitung jumlah grup
@@ -59,7 +75,7 @@ namespace Normal.Realtime.Examples {
             {_realtime.didConnectToRoom += DidConnectToRoom;
                 if(!off)
                 {
-_realtime.Connect(PlayerPrefs.GetInt("Room").ToString());
+_realtime.Connect(PlayerPrefs.GetInt("Room").ToString()+PlayerPrefs.GetInt("SGM"));
                 }else{
                       _realtime.Connect(PlayerPrefs.GetInt("Room").ToString(), new Room.ConnectOptions {
             offlineMode = true

@@ -16,7 +16,7 @@ public class jaksdcvb : MonoBehaviour {
    public TextMeshProUGUI ts,td;
 
    public string e = "";
-   public GameObject b;
+   public GameObject b,ddf;
    public int af;
 
    void Start() {
@@ -30,7 +30,7 @@ public class jaksdcvb : MonoBehaviour {
 
       if (h.isNetworkError || h.isHttpError) {
          // DONT CONNECT TO GAME IF CODE CHANGED
-
+ddf.SetActive(true);
       } else {
          // SUCESS, JOIN GAME, SPAWN CHARACTER
          A i = JsonUtility.FromJson<A>(h.downloadHandler.text);
