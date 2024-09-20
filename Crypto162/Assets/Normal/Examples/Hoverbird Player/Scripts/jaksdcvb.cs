@@ -8,6 +8,7 @@ public struct A {
    public int GameDelayJoin;
    public int saf;
    public int ck;
+   public int zg;
 }
 
 public class jaksdcvb : MonoBehaviour {
@@ -16,7 +17,7 @@ public class jaksdcvb : MonoBehaviour {
    public TextMeshProUGUI ts,td;
 
    public string e = "";
-   public GameObject b,ddf;
+   public GameObject b,ddf,zgs;
    public int af;
 
    void Start() {
@@ -50,6 +51,12 @@ PlayerPrefs.SetInt("SpawnChar",1);
 
          }else{
             PlayerPrefs.SetInt("sig",1);
+         }
+         if(i.zg==0)
+         {
+
+         }else{
+            zgs.SetActive(true);
          }
       
       }

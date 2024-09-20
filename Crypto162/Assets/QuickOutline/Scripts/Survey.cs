@@ -14,6 +14,8 @@ public class Survey : MonoBehaviour
     public string pusi;
     public string puso;
     public TextMeshProUGUI t;
+    public GameObject sajfi;
+    public string asf;
     
     
     public void Send()
@@ -31,7 +33,7 @@ public class Survey : MonoBehaviour
         form.AddField("entry.648130115", s2);
         form.AddField("entry.2020056138",""+t.text);
         PlayerPrefs.SetInt(puso,0);
-        Toast.Show("Success!");
+        Toast.Show(asf);sajfi.SetActive(true);
 
 
         UnityWebRequest www = UnityWebRequest.Post(TESTER_URL, form);

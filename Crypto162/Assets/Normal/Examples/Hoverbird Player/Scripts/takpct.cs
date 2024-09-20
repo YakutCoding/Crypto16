@@ -121,7 +121,7 @@ if(usi.tag == "Finish")
         }
     }
    public void jkl(){
-    int sdff=Random.Range(8,13);
+    int sdff=Random.Range(3,6);
         Takpcts-=sdff;
                     GameObject GameCoin = Realtime.Instantiate("GameCoin",gameObject.transform.position,gameObject.transform.rotation);
                     GameCoin.GetComponent<cqczvl>().kntl = ""+sdff;
