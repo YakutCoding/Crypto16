@@ -3309,6 +3309,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   t: {fileID: 1766121876}
+  sikma: 0
+  up: 0
+  tt: []
 --- !u!1 &366046102
 GameObject:
   m_ObjectHideFlags: 0
@@ -14122,7 +14125,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 58.473633, y: 0, z: 55.689163, w: 0}
+  m_margin: {x: 58.473633, y: 0, z: 28.893127, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
