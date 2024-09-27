@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 1488926636, guid: ebae63e7edba59945a994528ada1f7a2, type: 3}
   m_Name: ResourcesBaruTri57
   m_EditorClassIdentifier: 
-  _normcoreAppKey: 28be9f67-9b17-423f-9c31-5a4351cf902b
+  _normcoreAppKey: 418d9dc6-2cac-4af4-8993-f89200cb9156
   _matcherURL: wss://normcore-matcher.normcore.io:3000

@@ -154,7 +154,9 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Android: com.Blitz.BlitzArena
     Standalone: com.DefaultCompany.Crypto162
+    iPhone: com.Blitz.Blitz-Arena
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -250,8 +252,8 @@ PlayerSettings:
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: '{inproject}: user.keystore'
+  AndroidKeyaliasName: alokalok
   AndroidEnableArmv9SecurityFeatures: 0
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
@@ -259,7 +261,7 @@ PlayerSettings:
   AndroidEnableTango: 0
   androidEnableBanner: 1
   androidUseLowAccuracyLocation: 0
-  androidUseCustomKeystore: 0
+  androidUseCustomKeystore: 1
   m_AndroidBanners:
   - width: 320
     height: 180
@@ -582,7 +584,7 @@ PlayerSettings:
   enableCrashReportAPI: 0
   cameraUsageDescription: 
   locationUsageDescription: 
-  microphoneUsageDescription: 
+  microphoneUsageDescription: use microphone
   bluetoothUsageDescription: 
   macOSTargetOSVersion: 10.13.0
   switchNMETAOverride: 
@@ -836,6 +838,7 @@ PlayerSettings:
     Android: NORMCORE
     Standalone: NORMCORE
     WebGL: NORMCORE
+    iPhone: NORMCORE
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:

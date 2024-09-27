@@ -14,7 +14,7 @@ Material:
   m_ValidKeywords:
   - ACES_OFF
   - SaturN_OFF
-  - Vignette_ON
+  - Vignette_OFF
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -91,7 +91,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _VignetteIntensity: 0.204
+    - _VignetteIntensity: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.008, g: -0.027, b: -0.032, a: 1}
