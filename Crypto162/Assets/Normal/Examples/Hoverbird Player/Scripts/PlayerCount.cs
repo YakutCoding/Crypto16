@@ -13,12 +13,12 @@ public class PlayerCount : MonoBehaviour
     public ParticleSystem bbb,rrr;
     public pentilebabi tetaelek;
     public bool AvaibleToWithdraw=true;
-    bool Plor;
+    bool Plor,sfkd;
     public peliKambing pel;    public LeaderboardShowcase l;
     bool bokep;
     // Start is called before the first frame update
     void Start()
-    {
+    {sfkd=false;
         Application.targetFrameRate = 90;
         Invoke("Pentil",0.3f);
         Invoke("pler",1f);Invoke("bkp",1f);
@@ -87,11 +87,13 @@ void susu()
         }
         Debug.Log("tempListB"+tempListB.ToArray().Length);
           Debug.Log("tempListE"+tempListR.ToArray().Length);
+          if(AvaibleToWithdraw)
+          {
           if(tempListB.ToArray().Length>1 && tempListR.ToArray().Length>1){
           pel.elss =6;
           }else{
             pel.elss=1;
-          }
+          }}
           if(pel.elss<3){lks.text= lks.text.Replace("f","<color=red>"+(pel.elss+1).ToString())+"</color>";}else{ lks.text= lks.text.Replace("f",(pel.elss+1).ToString());}
         if(pel.elss<3)
         {
@@ -139,7 +141,9 @@ void susu()
     AvaibleToWithdraw=false;
 
      if(b.Length>0&&r.Length>0 && bokep)
-        { l.p();
+        {if(!sfkd){ l.p();sfkd=true;}else{
+            Debug.Log("errorkont");
+        }
         }else{if(bokep){PlayerPrefs.SetInt("kntl",1);SceneManager.LoadScene("Train");}
    }
         }

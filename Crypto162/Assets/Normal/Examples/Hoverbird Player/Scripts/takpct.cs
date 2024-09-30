@@ -57,6 +57,10 @@ public class takpct : MonoBehaviour
                     GameObject GameCoin = Realtime.Instantiate("GameCoin",gameObject.transform.position,gameObject.transform.rotation);
                     GameCoin.GetComponent<cqczvl>().kntl = ""+usi.GetComponent<zkvkwa>().Zkvkwa;
                     GameCoin.GetComponent<cqczvl>().kolor=gameObject;
+                    if(usi.GetComponent<zkvkwa>().okas)
+                    {
+                        Destroy(usi.GetComponent<zkvkwa>());
+                    }
                   
                 }
             }else{
@@ -66,6 +70,10 @@ if(usi.tag == "Finish")
                     GameObject GameCoin = Realtime.Instantiate("GameCoin",gameObject.transform.position,gameObject.transform.rotation);
                     GameCoin.GetComponent<cqczvl>().kntl = ""+usi.GetComponent<zkvkwa>().Zkvkwa;
                     GameCoin.GetComponent<cqczvl>().kolor=gameObject;
+                    if(usi.GetComponent<zkvkwa>().okas)
+                    {
+                        Destroy(usi.GetComponent<zkvkwa>());
+                    }
                 }
             }}
                 
@@ -229,7 +237,7 @@ Debug.Log("asd");
             if(other.GetComponent<NewBehaviourScript>()!=null)
             {          if((other.GetComponent<plerado>().Ote != GetComponent<cakv>().Cakvs) && other.GetComponent<plerado>().Ote.Length>0)
                 {
-                bapak.Play("stun");
+                bapak.Play("RevOKE");
                 }
             } 
             

@@ -73,7 +73,7 @@ using Normal.Realtime;
                     Invoke("doneSprint",0.4f);
                     }
                 }
-                if(gameObject.transform.position.y>24)
+                if(gameObject.transform.position.y>33)
                 {
                     _rigidbody.AddForce(transform.up * -9000);
                 }
@@ -135,8 +135,8 @@ gameObject.transform.position = new Vector3(Random.Range(-90,90),9,Random.Range(
         private void CalculateTargetMovement() {
             // Get input movement. Multiple by 6.0 to increase speed.
             Vector3 inputMovement = new Vector3();
-            inputMovement.x = (SimpleInput.GetAxisRaw("Horizontal") * (55.0f+(float)GameControlInput))*LagMultiplier*speedMult;
-            inputMovement.z = (SimpleInput.GetAxisRaw("Vertical")   * (55f+(float)GameControlInput))* LagMultiplier*speedMult;
+            inputMovement.x = (SimpleInput.GetAxisRaw("Horizontal") * (45f+(float)GameControlInput))*LagMultiplier*speedMult;
+            inputMovement.z = (SimpleInput.GetAxisRaw("Vertical")   * (45f+(float)GameControlInput))* LagMultiplier*speedMult;
 
             // Get the direction the camera is looking parallel to the ground plane.
             Vector3    cameraLookForwardVector = ProjectVectorOntoGroundPlane(cameraTarget.forward);

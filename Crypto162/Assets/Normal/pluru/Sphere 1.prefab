@@ -123,6 +123,7 @@ MonoBehaviour:
   CoinCryptoCurrency: 0
   coinCryptoObjecttOKEN: {fileID: 0}
   isd: 1
+  okas: 1
 --- !u!1 &4023028214361504485
 GameObject:
   m_ObjectHideFlags: 0

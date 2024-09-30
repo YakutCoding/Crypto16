@@ -84,7 +84,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 38.09, y: 46.11, z: 14.4}
+  m_Size: {x: 56.26, y: 22, z: 40}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2964867298919355367
 MonoBehaviour:
@@ -126,7 +126,9 @@ MonoBehaviour:
     component: {fileID: 936967902549368162}
   - componentID: 3
     component: {fileID: 2101842198432185504}
-  _childViews: []
+  _childViews:
+  - componentID: 1
+    component: {fileID: 0}
 --- !u!114 &3935969734798727714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,6 +205,7 @@ MonoBehaviour:
   CoinCryptoCurrency: 0
   coinCryptoObjecttOKEN: {fileID: 0}
   isd: 0
+  okas: 1
 --- !u!82 &2848073662238361164
 AudioSource:
   m_ObjectHideFlags: 0

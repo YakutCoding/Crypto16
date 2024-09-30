@@ -301,6 +301,7 @@ MonoBehaviour:
   CoinCryptoCurrency: 0
   coinCryptoObjecttOKEN: {fileID: 0}
   isd: 1
+  okas: 0
 --- !u!114 &8471262364727712598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -596,6 +597,7 @@ MonoBehaviour:
   CoinCryptoCurrency: 0
   coinCryptoObjecttOKEN: {fileID: 0}
   isd: 1
+  okas: 1
 --- !u!65 &5159599277255357346
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -14210,11 +14210,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62193d4d5436dd4b9b5d391293f6e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Zkvkwa: 20
+  Zkvkwa: 15
   GameTimer: 0
   CoinCryptoCurrency: 0
   coinCryptoObjecttOKEN: {fileID: 0}
   isd: 0
+  okas: 1
 --- !u!114 &-5058471773146217625
 MonoBehaviour:
   m_ObjectHideFlags: 0

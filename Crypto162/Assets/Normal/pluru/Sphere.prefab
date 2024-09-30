@@ -124,6 +124,7 @@ MonoBehaviour:
   CoinCryptoCurrency: 0
   coinCryptoObjecttOKEN: {fileID: 0}
   isd: 1
+  okas: 1
 --- !u!114 &6483245218460189953
 MonoBehaviour:
   m_ObjectHideFlags: 0

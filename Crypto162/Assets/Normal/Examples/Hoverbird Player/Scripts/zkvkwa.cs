@@ -8,7 +8,7 @@ public class zkvkwa : MonoBehaviour
     public float GameTimer;
     public float CoinCryptoCurrency;
     public GameObject coinCryptoObjecttOKEN;
-    public bool isd;
+    public bool isd,okas;
     // Start is called before the first frame update
     void Start()
     {
