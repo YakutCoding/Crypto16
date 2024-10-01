@@ -7,6 +7,7 @@ public class cakv : MonoBehaviour
     public string Cakvs {get=>cakvs;set=>cakvs=value;}
     public Outline[] pentilbabi;
     public TextMeshProUGUI t;
+    public GameObject asgu;
     public GameObject[] puentol;
 
     public PlayerCount p;

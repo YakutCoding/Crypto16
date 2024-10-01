@@ -141,11 +141,11 @@ if(usi.tag == "Finish")
                 {
                        if(a.Cakvs.Contains("b"))
             {
-gameObject.transform.position = new Vector3(Random.Range(-12,12),9,Random.Range(30,86));
+gameObject.transform.position = new Vector3(Random.Range(-12,12),15,Random.Range(30,86));
 Debug.Log("asd");
             }else
             {
-                gameObject.transform.position = new Vector3(Random.Range(-12,12),9,Random.Range(-86,-30));Debug.Log("kntol");
+                gameObject.transform.position = new Vector3(Random.Range(-12,12),15,Random.Range(-86,-30));Debug.Log("kntol");
             }
             }if(GetComponent<RealtimeView>().isOwnedLocallyInHierarchy)
             {
