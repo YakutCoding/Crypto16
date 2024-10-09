@@ -9,6 +9,7 @@ public class cakv : MonoBehaviour
     public TextMeshProUGUI t;
     public GameObject asgu;
     public GameObject[] puentol;
+    public Color plsd;
 
     public PlayerCount p;
     void Update()
@@ -35,7 +36,7 @@ public class cakv : MonoBehaviour
         {
             foreach(Outline ps in pentilbabi)
             {
-            ps.OutlineColor = Color.cyan;
+            ps.OutlineColor = plsd;
             t.color=Color.cyan;
             foreach(GameObject puentols in puentol)
             {
