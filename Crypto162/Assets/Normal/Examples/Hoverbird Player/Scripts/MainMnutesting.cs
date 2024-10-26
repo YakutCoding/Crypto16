@@ -17,6 +17,14 @@ public TextMeshProUGUI status;
     {
        
     }
+    public void res()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+    public void sdfgh()
+    {
+      
+    }
     public void setName()
     {
         if(t.text.Length>3 &&t.text.Length<17&&(!t.text.Contains("<")))
