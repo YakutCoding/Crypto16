@@ -61,7 +61,7 @@ public class sydacj : MonoBehaviour
     {dfld.SetActive(true);
         RestClient.Get<sadf>("https://blitzarena-c26d1-default-rtdb.firebaseio.com/" +sui.text + ".json").Then(response=> 
         
-       { sd = response;Decrypt(sd.fdf);PlayerPrefs.SetString("DefaultName",sd.asa);PlayerPrefs.SetInt("skfghq",1);SceneManager.LoadScene("MainMenu");}).Catch(error => { dfld.SetActive(false);Toast.Show("not found");
+       { sd = response;Decrypt(sd.fdf);PlayerPrefs.SetString("DefaultName",sd.asa);PlayerPrefs.SetInt("skfghq",1);PlayerPrefs.SetString("sdksg",sui.text.Replace(" ",""));SceneManager.LoadScene("MainMenu");}).Catch(error => { dfld.SetActive(false);Toast.Show("not found");
 
        });
     }
