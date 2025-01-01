@@ -1,0 +1,39 @@
+{
+  "buildFiles": [
+    "D:\\Unity Porject\\NetherGamePrototype\\crypnew\\Crypto16new\\Crypto162\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\src\\main\\cpp\\CMakeLists.txt",
+    "D:\\Unity Porject\\NetherGamePrototype\\crypnew\\Crypto16new\\Crypto162\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\src\\main\\cpp\\FramePacing\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\Vincent\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "D:\\Unity Porject\\NetherGamePrototype\\crypnew\\Crypto16new\\Crypto162\\.utmp\\RelWithDebInfo\\3s243u36\\arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\Vincent\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "D:\\Unity Porject\\NetherGamePrototype\\crypnew\\Crypto16new\\Crypto162\\.utmp\\RelWithDebInfo\\3s243u36\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "swappywrapper::@7e25bd1f32ce224db4e9": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "swappywrapper",
+      "output": "D:\\Unity Porject\\NetherGamePrototype\\crypnew\\Crypto16new\\Crypto162\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\build\\intermediates\\cxx\\RelWithDebInfo\\3s243u36\\obj\\arm64-v8a\\libswappywrapper.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "C:\\Users\\Vincent\\Downloads\\Download\\UtkMiftah\\UtkMiftah\\android-ndk-r25c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "C:\\Users\\Vincent\\Downloads\\Download\\UtkMiftah\\UtkMiftah\\android-ndk-r25c\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

@@ -1,3 +1,5 @@
 # ninja log v5
-1	1593	7492255060130810	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	332714f5df47b2aa
-1595	4892	7492255089281530	D:/Unity Porject/NetherGamePrototype/crypnew/Crypto16new/Crypto162/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3s243u36/obj/armeabi-v7a/libswappywrapper.so	a72ac71552bd5a13
+5	1613	7560176722580503	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8bcd080ddfa109ed
+1614	9520	7560176790217788	D:/Unity Porject/NetherGamePrototype/crypnew/Crypto16new/Crypto162/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3s243u36/obj/armeabi-v7a/libswappywrapper.so	781b9125e3500176
+1	1701	7560180086876459	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8bcd080ddfa109ed
+1702	8454	7560180141279942	D:/Unity Porject/NetherGamePrototype/crypnew/Crypto16new/Crypto162/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3s243u36/obj/armeabi-v7a/libswappywrapper.so	781b9125e3500176

@@ -1,8 +1,8 @@
 if(NOT TARGET games-frame-pacing::swappy)
 add_library(games-frame-pacing::swappy SHARED IMPORTED)
 set_target_properties(games-frame-pacing::swappy PROPERTIES
-    IMPORTED_LOCATION "C:/Users/Vincent/.gradle/caches/transforms-3/3fb496842553c62dbf8cc8f8058e05c2/transformed/jetified-games-frame-pacing-1.10.0/prefab/modules/swappy/libs/android.armeabi-v7a_API22_NDK23_cpp_shared_Release/libswappy.so"
-    INTERFACE_INCLUDE_DIRECTORIES "C:/Users/Vincent/.gradle/caches/transforms-3/3fb496842553c62dbf8cc8f8058e05c2/transformed/jetified-games-frame-pacing-1.10.0/prefab/modules/swappy/include"
+    IMPORTED_LOCATION "C:/Users/Vincent/.gradle/caches/transforms-3/6c08139b1f0d035d552b1f45c0bfb979/transformed/jetified-games-frame-pacing-1.10.0/prefab/modules/swappy/libs/android.armeabi-v7a_API22_NDK23_cpp_shared_Release/libswappy.so"
+    INTERFACE_INCLUDE_DIRECTORIES "C:/Users/Vincent/.gradle/caches/transforms-3/6c08139b1f0d035d552b1f45c0bfb979/transformed/jetified-games-frame-pacing-1.10.0/prefab/modules/swappy/include"
     INTERFACE_LINK_LIBRARIES ""
 )
 endif()
@@ -10,8 +10,8 @@ endif()
 if(NOT TARGET games-frame-pacing::swappy_static)
 add_library(games-frame-pacing::swappy_static STATIC IMPORTED)
 set_target_properties(games-frame-pacing::swappy_static PROPERTIES
-    IMPORTED_LOCATION "C:/Users/Vincent/.gradle/caches/transforms-3/3fb496842553c62dbf8cc8f8058e05c2/transformed/jetified-games-frame-pacing-1.10.0/prefab/modules/swappy_static/libs/android.armeabi-v7a_API22_NDK23_cpp_shared_Release/libswappy.a"
-    INTERFACE_INCLUDE_DIRECTORIES "C:/Users/Vincent/.gradle/caches/transforms-3/3fb496842553c62dbf8cc8f8058e05c2/transformed/jetified-games-frame-pacing-1.10.0/prefab/modules/swappy_static/include"
+    IMPORTED_LOCATION "C:/Users/Vincent/.gradle/caches/transforms-3/6c08139b1f0d035d552b1f45c0bfb979/transformed/jetified-games-frame-pacing-1.10.0/prefab/modules/swappy_static/libs/android.armeabi-v7a_API22_NDK23_cpp_shared_Release/libswappy.a"
+    INTERFACE_INCLUDE_DIRECTORIES "C:/Users/Vincent/.gradle/caches/transforms-3/6c08139b1f0d035d552b1f45c0bfb979/transformed/jetified-games-frame-pacing-1.10.0/prefab/modules/swappy_static/include"
     INTERFACE_LINK_LIBRARIES ""
 )
 endif()
